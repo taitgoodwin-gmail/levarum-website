@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Levarum: weekly AI visibility reports for agencies</title>
+<meta name="description" content="A weekly AI visibility report for each client brand, scored against its own local rivals, with a margin of error on every score. From about $40 a brand.">
+<link rel="icon" href="img/logo-header.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500&amp;family=Figtree:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="assets/levarum.css">
+</head>
+<body>
+<div class="lv-root">
+<header style="background: var(--lv-page); border-bottom: 1px solid var(--lv-hairline); position: relative;">
+<div class="lv-wrap" style="padding-top: 10px; padding-bottom: 10px; display: flex; flex-wrap: nowrap; align-items: center; justify-content: space-between; gap: 8px 24px;">
+<a href="index.html" aria-label="Levarum home. Relevant, by design." class="lv-brand"><img src="img/logo-header.svg" alt="" style="height: 28px; width: auto; display: block;"><span class="lv-brand__tag" aria-hidden="true">Relevant, by design.</span></a>
+<nav aria-label="Main" class="lv-nav-desk" style="display: flex; flex-wrap: wrap; align-items: center; gap: 0 28px;">
+<a class="lv-nav-link" href="index.html#how">How it works</a>
+<a class="lv-nav-link" href="about.html">About</a>
+<a class="lv-nav-link" href="pricing.html">Pricing</a>
+<a class="lv-nav-link" href="methodology.html">Methodology</a>
+<a class="lv-nav-link" href="#">Sign in</a>
+<a class="lv-btn" href="pricing.html">Choose a plan</a>
+</nav>
+<div class="lv-nav-mob">
+<details class="lv-menu-m">
+<summary>Menu</summary>
+<nav aria-label="Main, mobile" class="lv-menu-m__panel">
+<a class="lv-nav-link" href="index.html#how">How it works</a>
+<a class="lv-nav-link" href="about.html">About</a>
+<a class="lv-nav-link" href="pricing.html">Pricing</a>
+<a class="lv-nav-link" href="methodology.html">Methodology</a>
+<a class="lv-nav-link" href="#">Sign in</a>
+<a class="lv-btn" href="pricing.html" style="margin-top: 16px; align-self: flex-start;">Choose a plan</a>
+</nav>
+</details>
+</div>
+</div>
+</header>
+<main>
+<section class="lv-hero lv-inv" aria-labelledby="hero-h" style="background: var(--lv-inverse); overflow: hidden;">
+<div class="lv-wrap" style="padding-top: clamp(48px, 5cqw, 72px); padding-bottom: clamp(56px, 6cqw, 96px);">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-start; gap: 48px 64px;">
+<div style="flex: 1.3 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 24px;">
+<p class="lv-chip">For agencies serving local businesses</p>
+<h1 id="hero-h" class="lv-display" style="color: var(--lv-on-inverse);">Know how far you’re heard in AI answers. <span class="lv-closer lv-closer--accent">Raise it.</span></h1>
+<p class="lv-lead" style="color: var(--lv-on-inverse); max-width: 34em;">Levarum is a weekly AI visibility report for agencies: each client brand against its local rivals, with the margin of error shown.</p>
+<div style="display: flex; flex-direction: column; gap: 16px;">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px;">
+<a class="lv-btn" href="pricing.html">Choose a plan</a>
+<a class="lv-btn lv-btn-outline" href="#sample">See a sample report</a>
+</div>
+<p class="lv-body" style="color: var(--lv-on-inverse-muted);">About $50 a brand on Agency 5, about $40 on Agency 15.<br>Run one business without an agency? <a class="lv-link" href="pricing.html">Solo is $79 a month.</a></p>
+</div>
+<p class="lv-body-sm" style="color: var(--lv-on-inverse-muted); max-width: 38em;">Measured with OpenAI’s model with web search, through the API. Results may differ from what an individual ChatGPT user sees.</p>
+</div>
+<div class="lv-hero-art" style="flex: 1 1 400px; max-width: 580px; min-width: 0; position: relative;">
+<div id="sample" class="lv-frame-sky lv-hero-frame" style="position: relative; z-index: 1; min-width: 0; border-radius: var(--lv-radius-lg); padding: clamp(20px, 3cqw, 36px) clamp(20px, 3cqw, 36px) 0; box-sizing: border-box; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-start; height: auto; scroll-margin-top: 24px;">
+<figure aria-labelledby="sample-cap" style="margin: 0; background: var(--lv-page); border-radius: var(--lv-radius-md) var(--lv-radius-md) 0 0; padding: clamp(20px, 2.4cqw, 32px); display: flex; flex-direction: column; gap: 20px;">
+<div style="display: flex; flex-direction: column; gap: 4px;">
+<p class="lv-caption" style="color: var(--lv-ink-muted);">Sample report · made-up brand · not a client result</p>
+<p id="sample-cap" class="lv-subtitle" style="color: var(--lv-ink);">Northfield Coffee, Portland, week of 9 Nov 2026</p>
+<p class="lv-body-sm" style="color: var(--lv-ink-muted);">OpenAI’s model with web search, through the API · asked from Portland, OR · 75 answers</p>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 104px), 1fr)); gap: 16px; border-top: 1px solid var(--lv-hairline); padding-top: 20px;">
+<div style="display: flex; flex-direction: column; gap: 2px;">
+<p class="lv-body-sm" style="font-weight: 500; color: var(--lv-ink);">Mention rate</p>
+<p class="lv-numeral" style="color: var(--lv-ink);">41%</p>
+<p class="lv-body-sm" style="color: var(--lv-ink-muted);">31 of 75 answers name the brand, ±11 pts</p>
+<p class="lv-body-sm" style="color: var(--lv-ink); margin-top: 4px;">+5 pts since last week, ±16. Within normal variation.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 2px;">
+<p class="lv-body-sm" style="font-weight: 500; color: var(--lv-ink);">Cited rate</p>
+<p class="lv-numeral" style="color: var(--lv-ink);">16%</p>
+<p class="lv-body-sm" style="color: var(--lv-ink-muted);">12 of 75 answers link to its site, ±8 pts</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 2px;">
+<p class="lv-body-sm" style="font-weight: 500; color: var(--lv-ink);">Share of voice</p>
+<p class="lv-numeral" style="color: var(--lv-ink);">26%</p>
+<p class="lv-body-sm" style="color: var(--lv-ink-muted);">of mentions, against 3 local rivals, ±8 pts</p>
+</div>
+</div>
+<div class="lv-m-hide" style="display: flex; flex-direction: column; gap: 12px;">
+<p class="lv-body-sm" style="font-weight: 500; color: var(--lv-ink);">Who the answers name instead</p>
+<div style="display: grid; grid-template-columns: minmax(0, 9.5em) minmax(0, 1fr) 3em; align-items: center; gap: 10px 12px; font-size: 14px; line-height: 20px;">
+<span style="color: var(--lv-ink);">Harbor Roasters</span><span style="display: block; height: 10px; border-radius: 999px; background: var(--lv-mist);"><span style="display: block; height: 10px; width: 100%; border-radius: 999px; background: var(--lv-charcoal);"></span></span><span style="text-align: right; color: var(--lv-ink);">37%</span>
+<span style="font-weight: 500; color: var(--lv-ink);">Northfield Coffee</span><span style="display: block; height: 10px; border-radius: 999px; background: var(--lv-mist);"><span style="display: block; height: 10px; width: 70%; border-radius: 999px; background: var(--lv-accent);"></span></span><span style="font-weight: 500; text-align: right; color: var(--lv-ink);">26%</span>
+<span style="color: var(--lv-ink);">Kettle &amp; Crane</span><span style="display: block; height: 10px; border-radius: 999px; background: var(--lv-mist);"><span style="display: block; height: 10px; width: 62%; border-radius: 999px; background: var(--lv-charcoal);"></span></span><span style="text-align: right; color: var(--lv-ink);">23%</span>
+<span style="color: var(--lv-ink);">Brightline Beans</span><span style="display: block; height: 10px; border-radius: 999px; background: var(--lv-mist);"><span style="display: block; height: 10px; width: 38%; border-radius: 999px; background: var(--lv-charcoal);"></span></span><span style="text-align: right; color: var(--lv-ink);">14%</span>
+</div>
+</div>
+<div style="background: var(--lv-tint); border-radius: var(--lv-radius-sm); padding: 14px 16px; margin-bottom: 8px; display: flex; flex-direction: column; gap: 2px;">
+<p class="lv-body-sm" style="font-weight: 500; color: var(--lv-ink);">Weakest topic: espresso at home</p>
+<p class="lv-body-sm" style="color: var(--lv-ink);">3 of 15 answers name the brand. Next action: answer the five espresso questions on your own site.</p>
+</div>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="problem-h" style="background: var(--lv-page); border-top: 1px solid var(--lv-hairline);">
+<div class="lv-wrap" style="padding-top: clamp(56px, 7cqw, 96px); padding-bottom: clamp(56px, 7cqw, 96px);">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 40px 64px;">
+<div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 20px; max-width: 46em;">
+<h2 id="problem-h" class="lv-headline" style="color: var(--lv-ink);">Someone is going to ask what changed. <span class="lv-closer">Be ready.</span></h2>
+<p class="lv-lead" style="color: var(--lv-ink-body);">A screenshot of one AI answer can’t hold up to that question. Four weeks of asking, with every answer kept, can.</p>
+</div>
+<img src="img/illustration-65a2b0a2.svg" alt="" style="flex: 0 1 460px; width: min(100%, 460px); height: auto; display: block;">
+</div>
+</div>
+</section>
+<section id="how" class="lv-inv" aria-labelledby="how-h" style="background: var(--lv-inverse);">
+<div class="lv-wrap" style="padding-top: clamp(56px, 7cqw, 96px); padding-bottom: clamp(56px, 7cqw, 96px);">
+<div style="display: flex; flex-direction: column; gap: 48px;">
+<div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px 64px;">
+<div style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 16px; max-width: 40em;">
+<p class="lv-eyebrow">How it works</p>
+<h2 id="how-h" class="lv-headline" style="color: var(--lv-on-inverse);">Set it up once. Get a finished report every Monday.</h2>
+</div>
+<img src="img/illustration-a85e7f0f.svg" alt="" style="flex: 0 1 420px; width: min(100%, 420px); height: auto; display: block;">
+</div>
+<ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 40px 32px;">
+<li style="display: flex; flex-direction: column; gap: 10px; border-top: 1px solid var(--lv-inverse-rule); padding-top: 20px;">
+<p class="lv-caption" style="display: flex; align-items: center; gap: 10px; color: var(--lv-on-inverse-muted);"><span style="width: 28px; height: 28px; border-radius: 50%; background: var(--lv-ill-ember); color: #040404; display: grid; place-items: center; font-size: 13px; font-weight: 600;">1</span>Day one</p>
+<h3 class="lv-subtitle" style="color: var(--lv-on-inverse);">Add the brand and its local rivals</h3>
+<p class="lv-body-lg" style="color: var(--lv-on-inverse-muted);">Name the brand and the competitors you already watch in its market. After the first week we suggest up to ten more: the brands AI names most often alongside yours.</p>
+</li>
+<li style="display: flex; flex-direction: column; gap: 10px; border-top: 1px solid var(--lv-inverse-rule); padding-top: 20px;">
+<p class="lv-caption" style="display: flex; align-items: center; gap: 10px; color: var(--lv-on-inverse-muted);"><span style="width: 28px; height: 28px; border-radius: 50%; background: var(--lv-accent); color: #040404; display: grid; place-items: center; font-size: 13px; font-weight: 600;">2</span>Day one</p>
+<h3 class="lv-subtitle" style="color: var(--lv-on-inverse);">Confirm 25 buyer questions</h3>
+<p class="lv-body-lg" style="color: var(--lv-on-inverse-muted);">We suggest the questions a local buyer would ask. You edit and confirm them. We flag any question that names the brand or drifts off-topic, because those make a score look better than it is.</p>
+</li>
+<li style="display: flex; flex-direction: column; gap: 10px; border-top: 1px solid var(--lv-inverse-rule); padding-top: 20px;">
+<p class="lv-caption" style="display: flex; align-items: center; gap: 10px; color: var(--lv-on-inverse-muted);"><span style="width: 28px; height: 28px; border-radius: 50%; background: var(--lv-sun); color: #040404; display: grid; place-items: center; font-size: 13px; font-weight: 600;">3</span>Every Sunday</p>
+<h3 class="lv-subtitle" style="color: var(--lv-on-inverse);">We ask, three times over</h3>
+<p class="lv-body-lg" style="color: var(--lv-on-inverse-muted);">Each question goes to OpenAI’s model three times with web search on, because the answer changes from one ask to the next. We keep every answer and every source.</p>
+</li>
+<li style="display: flex; flex-direction: column; gap: 10px; border-top: 1px solid var(--lv-inverse-rule); padding-top: 20px;">
+<p class="lv-caption" style="display: flex; align-items: center; gap: 10px; color: var(--lv-on-inverse-muted);"><span style="width: 28px; height: 28px; border-radius: 50%; background: var(--lv-ice); color: #040404; display: grid; place-items: center; font-size: 13px; font-weight: 600;">4</span>Monday, 08:30 ET</p>
+<h3 class="lv-subtitle" style="color: var(--lv-on-inverse);">Your report arrives</h3>
+<p class="lv-body-lg" style="color: var(--lv-on-inverse-muted);">One email with a link to the web report. It reads well on a phone and has a print layout.</p>
+</li>
+</ol>
+</div>
+</div>
+</section>
+<section aria-labelledby="report-h" style="background: var(--lv-page);">
+<div class="lv-wrap" style="padding-top: clamp(56px, 7cqw, 96px); padding-bottom: clamp(56px, 7cqw, 96px); display: flex; flex-direction: column; gap: 48px;">
+<div style="display: flex; flex-wrap: wrap; gap: 40px 64px;">
+<div style="flex: 1 1 300px; min-width: 0; display: flex; flex-direction: column; gap: 16px;">
+<p class="lv-eyebrow">What you get, every Monday</p>
+<h2 id="report-h" class="lv-headline" style="color: var(--lv-ink);">Each brand against its own local rivals. <span class="lv-closer">Read the evidence.</span></h2>
+<p class="lv-body-lg" style="color: var(--lv-ink-body);">What the report tells you, in the order you read it. The answer comes first, then the evidence behind it: every score, every answer and every source.</p>
+<img src="img/illustration-48159eb1.svg" alt="" style="width: min(100%, 420px); height: auto; display: block; margin-top: 16px;">
+</div>
+<dl style="flex: 2 1 560px; min-width: 0; margin: 0; display: flex; flex-direction: column;">
+<div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 20px 0; border-top: 1px solid var(--lv-hairline);">
+<dt class="lv-body-strong lv-dt" style="flex: 1 1 180px; margin: 0; color: var(--lv-ink);">Summary</dt>
+<dd class="lv-body-lg" style="flex: 3 1 340px; margin: 0; color: var(--lv-ink-body);">One paragraph: where the brand stands, the gap to the leading local rival and what matters most. Every figure in it comes from that week’s answers.</dd>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 20px 0; border-top: 1px solid var(--lv-hairline);">
+<dt class="lv-body-strong lv-dt" style="flex: 1 1 180px; margin: 0; color: var(--lv-ink);">Next actions</dt>
+<dd class="lv-body-lg" style="flex: 3 1 340px; margin: 0; color: var(--lv-ink-body);">Three to six things to do, each tied to the finding behind it.</dd>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 20px 0; border-top: 1px solid var(--lv-hairline);">
+<dt class="lv-body-strong lv-dt" style="flex: 1 1 180px; margin: 0; color: var(--lv-ink);">Three scores</dt>
+<dd class="lv-body-lg" style="flex: 3 1 340px; margin: 0; color: var(--lv-ink-body);">Mention rate: how many answers name the brand. Cited rate: how many link to its own site. Share of voice: its share of all mentions among the rivals you track.</dd>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 20px 0; border-top: 1px solid var(--lv-hairline);">
+<dt class="lv-body-strong lv-dt" style="flex: 1 1 180px; margin: 0; color: var(--lv-ink);">Change you can defend</dt>
+<dd class="lv-body-lg" style="flex: 3 1 340px; margin: 0; color: var(--lv-ink-body);">Each score shows its change since last week and the margin of error, labelled real change or within normal variation. From week four, each score also shows a rolling trend.</dd>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 20px 0; border-top: 1px solid var(--lv-hairline);">
+<dt class="lv-body-strong lv-dt" style="flex: 1 1 180px; margin: 0; color: var(--lv-ink);">Topics</dt>
+<dd class="lv-body-lg" style="flex: 3 1 340px; margin: 0; color: var(--lv-ink-body);">Questions grouped into three to six topics you can edit, with the weakest highlighted, so you know where to act first.</dd>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 20px 0; border-top: 1px solid var(--lv-hairline);">
+<dt class="lv-body-strong lv-dt" style="flex: 1 1 180px; margin: 0; color: var(--lv-ink);">Every answer</dt>
+<dd class="lv-body-lg" style="flex: 3 1 340px; margin: 0; color: var(--lv-ink-body);">All 75 answers in full and searchable, with the sources each one cited as links you can open.</dd>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 4px 24px; padding: 20px 0; border-top: 1px solid var(--lv-hairline); border-bottom: 1px solid var(--lv-hairline);">
+<dt class="lv-body-strong lv-dt" style="flex: 1 1 180px; margin: 0; color: var(--lv-ink);">Alerts between reports</dt>
+<dd class="lv-body-lg" style="flex: 3 1 340px; margin: 0; color: var(--lv-ink-body);">An email when the brand or a tracked rival moves 15 points or more in a week.</dd>
+</div>
+</dl>
+</div>
+<ul style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 8px;">
+<li style="background: var(--lv-page); border: 1px solid var(--lv-rule); border-radius: var(--lv-radius-md); padding: 28px; display: flex; flex-direction: column; gap: 12px;">
+<span style="width: 64px; height: 64px; border-radius: var(--lv-radius-md); background: var(--lv-tint-sky); display: grid; place-items: center;"><img src="img/illustration-ce087df8.svg" alt="" style="width: 36px; height: 36px; display: block;"></span>
+<p class="lv-body-strong" style="color: var(--lv-accent-text); font-weight: 600;">Know</p>
+<h3 class="lv-subtitle" style="color: var(--lv-ink);">Know where they stand.</h3>
+<p class="lv-body-lg" style="color: var(--lv-ink-body);">What AI answers say about each brand, who shows up instead and which sources they cite, against the rivals in its own market.</p>
+</li>
+<li style="background: var(--lv-page); border: 1px solid var(--lv-rule); border-radius: var(--lv-radius-md); padding: 28px; display: flex; flex-direction: column; gap: 12px;">
+<span style="width: 64px; height: 64px; border-radius: var(--lv-radius-md); background: var(--lv-tint-sun); display: grid; place-items: center;"><img src="img/illustration-6ac0e00a.svg" alt="" style="width: 36px; height: 36px; display: block;"></span>
+<p class="lv-body-strong" style="color: var(--lv-accent-text); font-weight: 600;">Raise</p>
+<h3 class="lv-subtitle" style="color: var(--lv-ink);">Take them further.</h3>
+<p class="lv-body-lg" style="color: var(--lv-ink-body);">Three to six next actions every week, each tied to the finding behind it, such as a weak topic or a source AI keeps citing.</p>
+</li>
+</ul>
+</div>
+</section>
+<section aria-labelledby="agency-h" style="background: var(--lv-mist); border-top: 1px solid var(--lv-hairline);">
+<div class="lv-wrap" style="padding-top: clamp(56px, 7cqw, 96px); padding-bottom: clamp(56px, 7cqw, 96px);">
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 48px;">
+<div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 32px;">
+<div style="display: flex; flex-direction: column; gap: 16px;">
+<p class="lv-eyebrow">For agencies</p>
+<h2 id="agency-h" class="lv-headline" style="color: var(--lv-ink);">Your report, in your brand. <span class="lv-closer">Send it.</span></h2>
+</div>
+<ul style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 24px;">
+<li style="display: flex; flex-direction: column; gap: 4px;">
+<h3 class="lv-body-strong" style="color: var(--lv-ink);">Your agency’s name on every report</h3>
+<p class="lv-body-lg" style="color: var(--lv-ink-body);">On Agency plans the report carries your agency’s name and no Levarum branding, so you can send it as your own.</p>
+</li>
+<li style="display: flex; flex-direction: column; gap: 4px;">
+<h3 class="lv-body-strong" style="color: var(--lv-ink);">One login, every client brand</h3>
+<p class="lv-body-lg" style="color: var(--lv-ink-body);">Agency 5 holds five brands and Agency 15 holds fifteen. Each brand gets its own questions, rivals and weekly report.</p>
+</li>
+<li style="display: flex; flex-direction: column; gap: 4px;">
+<h3 class="lv-body-strong" style="color: var(--lv-ink);">We stay out of your client relationship</h3>
+<p class="lv-body-lg" style="color: var(--lv-ink-body);">We don’t contact your clients about Levarum, and we don’t sell or rent your data or your clients’ data.</p>
+</li>
+</ul>
+<a class="lv-btn" href="pricing.html" style="align-self: flex-start;">See the plans</a>
+</div>
+<div class="lv-frame-ice" style="flex: 1 1 400px; min-width: 0; border-radius: var(--lv-radius-lg); padding: clamp(20px, 3cqw, 40px) clamp(20px, 3cqw, 40px) 0; box-sizing: border-box; overflow: hidden; display: flex; flex-direction: column; justify-content: flex-end;">
+<figure aria-labelledby="agency-cap" style="margin: 0; background: var(--lv-page); border-radius: var(--lv-radius-md) var(--lv-radius-md) 0 0; padding: clamp(20px, 2.4cqw, 28px) clamp(20px, 2.4cqw, 28px) 36px; display: flex; flex-direction: column; gap: 18px;">
+<p class="lv-caption" style="color: var(--lv-ink-muted);">Sample · made-up agency and brands</p>
+<div style="background: var(--lv-mist); border-radius: var(--lv-radius-sm); padding: 14px 16px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 4px 16px;">
+<p class="lv-subtitle" style="color: var(--lv-ink);">Bramble &amp; Co.</p>
+<p class="lv-body-sm" style="color: var(--lv-ink-muted);">Weekly AI visibility report</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px;">
+<p id="agency-cap" class="lv-body-sm" style="font-weight: 500; color: var(--lv-ink);">Brands, 5 of 5 on Agency 5</p>
+<ul style="list-style: none; margin: 0; padding: 0; border: 1px solid var(--lv-rule); border-radius: var(--lv-radius-sm); font-size: 15px; line-height: 22px; color: var(--lv-ink-muted);">
+<li style="display: flex; justify-content: space-between; gap: 12px; padding: 12px 16px; border-bottom: 1px solid var(--lv-hairline); font-weight: 500; color: var(--lv-ink);"><span>Northfield Coffee</span><span style="font-weight: 400; color: var(--lv-ink-muted);">Report ready</span></li>
+<li style="display: flex; justify-content: space-between; gap: 12px; padding: 12px 16px; border-bottom: 1px solid var(--lv-hairline);"><span>Alder Outdoor</span><span>Report ready</span></li>
+<li style="display: flex; justify-content: space-between; gap: 12px; padding: 12px 16px; border-bottom: 1px solid var(--lv-hairline);"><span>Pinecrest Dental</span><span>Report ready</span></li>
+<li style="display: flex; justify-content: space-between; gap: 12px; padding: 12px 16px; border-bottom: 1px solid var(--lv-hairline);"><span>Lumen Lighting</span><span>First week running</span></li>
+<li style="display: flex; justify-content: space-between; gap: 12px; padding: 12px 16px;"><span>Tidewater Tea</span><span>Questions to confirm</span></li>
+</ul>
+</div>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section class="lv-inv" aria-labelledby="limits-h" style="background: var(--lv-inverse);">
+<div class="lv-wrap" style="padding-top: clamp(56px, 7cqw, 96px); padding-bottom: clamp(56px, 7cqw, 96px);">
+<div style="display: flex; flex-direction: column; gap: 40px;">
+<div style="display: flex; flex-direction: column; gap: 16px; max-width: 44em;">
+<p class="lv-eyebrow">What we stand for</p>
+<h2 id="limits-h" class="lv-headline" style="color: var(--lv-on-inverse);">Three things we refuse to do. <span class="lv-closer">Trust the evidence.</span></h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 8px;">
+<div style="background: var(--lv-inverse-sunken); border: 1px solid var(--lv-inverse-rule); border-radius: var(--lv-radius-md); padding: 28px; display: flex; flex-direction: column; gap: 12px;">
+<span aria-hidden="true" style="width: 16px; height: 16px; border-radius: 50%; background: var(--lv-ill-ember);"></span>
+<h3 class="lv-subtitle" style="color: var(--lv-on-inverse);">Call a swing a win.</h3>
+<p class="lv-body-lg" style="color: var(--lv-on-inverse-muted);">We call a change real only when it clears its margin of error. Otherwise the report says it is within normal variation.</p>
+</div>
+<div style="background: var(--lv-inverse-sunken); border: 1px solid var(--lv-inverse-rule); border-radius: var(--lv-radius-md); padding: 28px; display: flex; flex-direction: column; gap: 12px;">
+<span aria-hidden="true" style="width: 16px; height: 16px; border-radius: 50%; background: var(--lv-accent);"></span>
+<h3 class="lv-subtitle" style="color: var(--lv-on-inverse);">Claim an engine we haven’t asked.</h3>
+<p class="lv-body-lg" style="color: var(--lv-on-inverse-muted);">Every report names the engine, model, location and date. Today that is OpenAI’s model with web search, through the API. Other engines come later, where their terms allow, and are reported separately.</p>
+</div>
+<div style="background: var(--lv-inverse-sunken); border: 1px solid var(--lv-inverse-rule); border-radius: var(--lv-radius-md); padding: 28px; display: flex; flex-direction: column; gap: 12px;">
+<span aria-hidden="true" style="width: 16px; height: 16px; border-radius: 50%; background: var(--lv-sun);"></span>
+<h3 class="lv-subtitle" style="color: var(--lv-on-inverse);">Step between you and your client.</h3>
+<p class="lv-body-lg" style="color: var(--lv-on-inverse-muted);">We measure and suggest. You decide what to change, and the client relationship stays yours.</p>
+</div>
+</div>
+<div class="lv-inv lv-callout" style="background: var(--lv-inverse-sunken); border: 1px solid var(--lv-inverse-rule); border-radius: 24px; padding: 24px clamp(24px, 3cqw, 40px); display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 32px;">
+<p class="lv-body-strong" style="color: var(--lv-on-inverse); white-space: nowrap;">Our rule</p>
+<p class="lv-body-lg" style="flex: 1 1 320px; min-width: 0; color: var(--lv-on-inverse-muted);">A sampled answer is evidence from that run, not a guarantee of future visibility. <a class="lv-link" href="methodology.html" style="color: var(--lv-focus-inverse);">Read how we measure</a></p>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="faq-h" style="background: var(--lv-page);">
+<div class="lv-wrap" style="padding-top: clamp(56px, 7cqw, 96px);">
+<div style="display: flex; flex-wrap: wrap; gap: 32px 64px;">
+<div style="flex: 1 1 280px; min-width: 0; display: flex; flex-direction: column; gap: 16px;">
+<p class="lv-eyebrow">Questions</p>
+<h2 id="faq-h" class="lv-headline" style="color: var(--lv-ink);">Questions before you choose a plan.</h2>
+</div>
+<div class="lv-faq" style="flex: 2 1 560px; min-width: 0; border-top: 1px solid var(--lv-rule);">
+<details open style="border-bottom: 1px solid var(--lv-rule);">
+<summary>What is Levarum?</summary>
+<p class="lv-body-lg" style="margin: 0 0 20px; color: var(--lv-ink-body);">Levarum is a weekly AI visibility report. Every Sunday it asks OpenAI’s model the questions a brand’s buyers ask. On Monday you get a report: how often answers name and cite the brand against its local rivals, and what to do next.</p>
+</details>
+<details style="border-bottom: 1px solid var(--lv-rule);">
+<summary>Who is Levarum for?</summary>
+<p class="lv-body-lg" style="margin: 0 0 20px; color: var(--lv-ink-body);">Marketing agencies of any size that serve local and small businesses. On Agency 5 and Agency 15, each report carries your agency’s name, not ours. A business without an agency can use Solo: one brand, $79 a month, with the Levarum name on the report.</p>
+</details>
+<details style="border-bottom: 1px solid var(--lv-rule);">
+<summary>Which AI engines does Levarum measure?</summary>
+<p class="lv-body-lg" style="margin: 0 0 20px; color: var(--lv-ink-body);">Today, OpenAI’s model with web search, through the API. Results may differ from what an individual ChatGPT user sees. Every report names the engine, model, location and date. Other engines come later, where their terms allow, and will be reported separately.</p>
+</details>
+<details style="border-bottom: 1px solid var(--lv-rule);">
+<summary>What does the margin of error mean?</summary>
+<p class="lv-body-lg" style="margin: 0 0 20px; color: var(--lv-ink-body);">AI answers change between asks, so every score carries a margin of error. A change counts as real only when it clears that margin. Anything smaller is labelled within normal variation, so you’re less likely to report a swing as a win. <a class="lv-link" href="methodology.html">How we measure</a></p>
+</details>
+<details style="border-bottom: 1px solid var(--lv-rule);">
+<summary>How much does Levarum cost?</summary>
+<p class="lv-body-lg" style="margin: 0 0 20px; color: var(--lv-ink-body);">Solo is $79 a month for one brand. Agency 5 is $249 a month for five brands, about $50 a brand. Agency 15 is $599 for fifteen, about $40 a brand. Prices are in US dollars, billed monthly. You can change plans later.</p>
+</details>
+<details style="border-bottom: 1px solid var(--lv-rule);">
+<summary>How is Levarum different from other AI visibility tools?</summary>
+<p class="lv-body-lg" style="margin: 0 0 20px; color: var(--lv-ink-body);">Levarum is built around one comparison: each brand against the local rivals you name in its market. The weekly report shows that comparison, the answers and sources behind it, and next actions tied to what it finds.</p>
+</details>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="band-h" style="background: var(--lv-page);">
+<div class="lv-wrap" style="padding-top: clamp(56px, 7cqw, 96px); padding-bottom: clamp(56px, 7cqw, 96px);">
+<div class="lv-frame-sky" style="border-radius: var(--lv-radius-2xl); padding: clamp(32px, 5cqw, 72px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px 48px;">
+<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px;">
+<h2 id="band-h" class="lv-headline" style="color: var(--lv-ink);">Your first report arrives the Monday after you confirm your questions.</h2>
+<p class="lv-lead" style="color: var(--lv-ink);">Pick the plan that fits the number of brands or locations you look after. You can change plans later.</p>
+</div>
+<a class="lv-btn" href="pricing.html">Choose a plan</a>
+</div>
+</div>
+</section>
+</main>
+<footer style="background: var(--lv-mist); border-top: 1px solid var(--lv-hairline);">
+<div class="lv-wrap" style="padding-top: 48px; padding-bottom: 40px; display: flex; flex-direction: column; gap: 32px;">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 24px 48px;">
+<div style="display: flex; flex-direction: column; gap: 12px;">
+<a href="index.html" aria-label="Levarum home" style="display: inline-flex; align-self: flex-start;"><img src="img/logo-footer.svg" alt="Levarum. Relevant, by design." style="height: 64px; width: auto; display: block;"></a>
+<p class="lv-body-sm" style="color: var(--lv-ink-muted); max-width: 36em;">Levarum is coined from the Latin <em>levāre</em>: to raise. It’s the root behind relevant and elevate. When someone asks an AI a question, we show you which brands the answer raises, and whether yours is one of them.</p>
+</div>
+<nav aria-label="Footer" style="display: flex; flex-wrap: wrap; gap: 0 24px; align-content: flex-start;">
+<a class="lv-foot-link" href="about.html">About</a>
+<a class="lv-foot-link" href="pricing.html">Pricing</a>
+<a class="lv-foot-link" href="methodology.html">Methodology</a>
+<a class="lv-foot-link" href="terms.html">Terms</a>
+<a class="lv-foot-link" href="privacy.html">Privacy</a>
+<a class="lv-foot-link" href="dpa.html">Data Processing Agreement</a>
+<a class="lv-foot-link" href="#">Sign in</a>
+</nav>
+</div>
+<p class="lv-body-sm" style="border-top: 1px solid var(--lv-rule); padding-top: 20px; color: var(--lv-ink-muted);">© 2026 IT Associates, LLC. Levarum is a product of IT Associates, LLC. Payments by Stripe. ChatGPT is a trademark of OpenAI; Levarum is not affiliated with OpenAI.</p>
+</div>
+</footer>
+</div>
+</body>
+</html>
