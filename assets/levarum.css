@@ -177,3 +177,5 @@ body{margin:0;background:var(--lv-page)}
 @supports not (container-type: inline-size) {
   @media (max-width: 880px) { .lv-nav-desk { display: none !important; } .lv-nav-mob { display: flex; } }
 }
+/* Legal document tabs (Terms, Privacy policy, DPA): at least 44 x 44 px tap area (REQ-39 AC4) */
+nav[aria-label="Legal documents"] a { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; box-sizing: border-box; }
