@@ -20,6 +20,7 @@ Pushing to `main` deploys to production; any other branch gets a preview URL.
 - Fonts (Newsreader, Figtree; SIL OFL 1.1) are self-hosted in `assets/fonts/`.
 - Icons: `favicon.ico`, `img/icon.svg` and `apple-touch-icon.png` come from the Levarum design system's favicon and app tile. `img/og-image.png` (1200 × 630) is the share image.
 - `img/frame-*.webp` are the compressed frame textures; the PNGs stay as a fallback.
+- `/assets/` is cached for 7 days, so every page links the stylesheet as `levarum.css?v=<hash>`. After any change to `levarum.css`, update the `?v=` value on every page (first 8 characters of `sha256sum assets/levarum.css`), or visitors keep the old styles for up to a week.
 
 ## Before launch
 - **Buy and sign-in:** the plan cards say "Opens Friday, November 13". "Sign in" (header, phone menu, footer) goes to `/signin`, a holding page that says sign-in opens with the plans. At launch, point the plan buttons at Stripe Checkout and change every `href="/signin"` to the app's login URL (or turn `signin.html` into a redirect).
