@@ -22,7 +22,7 @@ Pushing to `main` deploys to production; any other branch gets a preview URL.
 - `img/frame-*.webp` are the compressed frame textures; the PNGs stay as a fallback.
 
 ## Before launch
-- **Buy and sign-in:** the plan cards say "Opens Friday, November 13" and "Sign in" is removed. At launch, point the plan buttons at Stripe Checkout and add "Sign in" back with the app's login URL.
+- **Buy and sign-in:** the plan cards say "Opens Friday, November 13". "Sign in" (header, phone menu, footer) goes to `/signin`, a holding page that says sign-in opens with the plans. At launch, point the plan buttons at Stripe Checkout and change every `href="/signin"` to the app's login URL (or turn `signin.html` into a redirect).
 - **Contact address:** none on the site yet. Add a monitored address to Terms, Privacy, DPA and a footer Contact link.
 - **Legal:** Terms, Privacy and DPA carry 11 `[COUNSEL TO SUPPLY]` blocks and a "Draft of Oct 29, 2026" line. Counsel completes them; then replace the draft line with "Effective November 13, 2026" and remove the draft notes on those pages and on Methodology.
 - **Model name:** Methodology says the exact OpenAI model will be named before launch. Add it there.

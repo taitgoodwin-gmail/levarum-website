@@ -172,3 +172,8 @@ body{margin:0;background:var(--lv-page)}
 }
 /* Phone: tagline a touch smaller so the header fits at 320 px */
 @container (max-width: 760px) { .lv-brand__tag { font-size: 11px; line-height: 13px; } }
+/* Small tablets: the full nav (with Sign in) wraps under the logo below ~850 px, so keep the Menu button up to 880 px */
+@container (max-width: 880px) { .lv-nav-desk { display: none !important; } .lv-nav-mob { display: flex; } }
+@supports not (container-type: inline-size) {
+  @media (max-width: 880px) { .lv-nav-desk { display: none !important; } .lv-nav-mob { display: flex; } }
+}
