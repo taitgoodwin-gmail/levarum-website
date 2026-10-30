@@ -22,8 +22,9 @@ Pushing to `main` deploys to production; any other branch gets a preview URL.
 - `img/frame-*.webp` are the compressed frame textures; the PNGs stay as a fallback.
 
 ## Before launch
-- **Buy and sign-in:** the plan cards say "Opens Friday, November 13". "Sign in" (header, phone menu, footer) goes to `/signin`, a holding page that says sign-in opens with the plans. At launch, point the plan buttons at Stripe Checkout and change every `href="/signin"` to the app's login URL (or turn `signin.html` into a redirect).
-- **Contact address:** none on the site yet. Add a monitored address to Terms, Privacy, DPA and a footer Contact link.
+- **Buy and sign-in:** the plan cards say "Opens Friday, November 13" with an "Email us for a reminder" button. "Sign in" (header, phone menu, footer) goes to `/signin`, a holding page that says sign-in opens with the plans. At launch, replace each card's reminder button with a Stripe Checkout button and change every `href="/signin"` to the app's login URL (or turn `signin.html` into a redirect).
+- **Pre-launch calls to action:** until plans open, the header and phone-menu button reads "See a sample report" (`/#sample`) and body buttons read "See the plans", because there is nothing to buy yet. At launch, change the header button and the body buttons on Home, About and Methodology back to "Choose a plan" (`/pricing`), and add the header button back to Pricing only if it should point somewhere other than the page it sits on.
+- **Contact address:** a dedicated alias is linked from the footer Contact link on every page, the plan-card reminder buttons, and beside the contact placeholders in Terms and Privacy. Retire the alias by replacing it in those places. Counsel still supplies the registered address and the DPA's contact terms.
 - **Legal:** Terms, Privacy and DPA carry 11 `[COUNSEL TO SUPPLY]` blocks and a "Draft of Oct 29, 2026" line. Counsel completes them; then replace the draft line with "Effective November 13, 2026" and remove the draft notes on those pages and on Methodology.
 - **Model name:** Methodology says the exact OpenAI model will be named before launch. Add it there.
 - **Domain:** when the real domain is live, replace `https://levarum-website.vercel.app` in every page's `og:url` and `og:image`, the JSON-LD, `robots.txt` and `sitemap.xml`, add canonical tags, and remove the noindex header.
