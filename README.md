@@ -1,6 +1,6 @@
 # Levarum website
 
-Pre-launch marketing site for Levarum, a trade name of IT Associates, LLC. Plans open Wednesday, November 25, 2026.
+Pre-launch marketing site for Levarum, a trade name of IT Associates, LLC. Plans open Friday, November 13, 2026; the first reports go out Monday, November 16.
 
 Live preview: https://levarum-website.vercel.app
 
@@ -22,12 +22,12 @@ Pushing to `main` deploys to production; any other branch gets a preview URL.
 - `img/frame-*.webp` are the compressed frame textures; the PNGs stay as a fallback.
 
 ## Before launch
-- **Buy and sign-in:** the plan cards say "Opens Wednesday, November 25" and "Sign in" is removed. At launch, point the plan buttons at Stripe Checkout and add "Sign in" back with the app's login URL.
+- **Buy and sign-in:** the plan cards say "Opens Friday, November 13" and "Sign in" is removed. At launch, point the plan buttons at Stripe Checkout and add "Sign in" back with the app's login URL.
 - **Contact address:** none on the site yet. Add a monitored address to Terms, Privacy, DPA and a footer Contact link.
-- **Legal:** Terms, Privacy and DPA carry 11 `[COUNSEL TO SUPPLY]` blocks and a "Draft of Oct 29, 2026" line. Counsel completes them; then replace the draft line with "Effective November 25, 2026" and remove the draft notes on those pages and on Methodology.
+- **Legal:** Terms, Privacy and DPA carry 11 `[COUNSEL TO SUPPLY]` blocks and a "Draft of Oct 29, 2026" line. Counsel completes them; then replace the draft line with "Effective November 13, 2026" and remove the draft notes on those pages and on Methodology.
 - **Model name:** Methodology says the exact OpenAI model will be named before launch. Add it there.
 - **Domain:** when the real domain is live, replace `https://levarum-website.vercel.app` in every page's `og:url` and `og:image`, the JSON-LD, `robots.txt` and `sitemap.xml`, add canonical tags, and remove the noindex header.
-- **Remove the pre-launch lines** ("Plans open Wednesday, November 25, 2026…") on Home, About and Pricing.
+- **Remove the pre-launch lines** ("Plans open Friday, November 13, 2026…") on Home, About and Pricing.
 - **Confirm launch scope** for features the site describes: rival suggestions, topic grouping, rolling trend from week four, searchable answers, 15-point alerts, CSV export and emailed-code sign-in.
 
 Source of truth for design changes: the "Levarum website" design canvas in Claude.
