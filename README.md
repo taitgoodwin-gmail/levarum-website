@@ -1,6 +1,6 @@
 # Levarum website
 
-Pre-launch marketing site for Levarum, a trade name of IT Associates, LLC. Plans open Friday, November 13, 2026. Brands are tracked daily, with a weekly digest email (decisions D-58 to D-66, 30 Oct 2026).
+Pre-launch marketing site for Levarum, a trade name of IT Associates, LLC. Plans open Friday, November 13, 2026. Runs and reports are on demand: run a brand any time or on the customer's own schedule, 4 runs per brand a month on every plan, extra runs on credits (product decision, 31 Oct 2026, replacing the fixed run cadence of D-58 and D-59).
 
 Live preview: https://levarum-website.vercel.app
 
@@ -29,6 +29,6 @@ Pushing to `main` deploys to production; any other branch gets a preview URL.
 - **Model name:** Methodology says the exact OpenAI model will be named before launch. Add it there.
 - **Domain:** when the real domain is live, replace `https://levarum-website.vercel.app` in every page's `og:url` and `og:image`, the JSON-LD, `robots.txt` and `sitemap.xml`, add canonical tags, and remove the noindex header.
 - **Remove the pre-launch lines** ("Plans open Friday, November 13, 2026…") on Home, About and Pricing.
-- **Confirm launch scope** for features the site describes: rival suggestions, topic grouping, rolling trend from week four, searchable answers, 15-point alerts, CSV export and emailed-code sign-in.
+- **Confirm launch scope** for features the site describes: rival suggestions, topic grouping, rolling trend from the fourth run, searchable answers, 15-point alerts, CSV export and emailed-code sign-in.
 
 Source of truth for design changes: the "Levarum website" design canvas in Claude.
