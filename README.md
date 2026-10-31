@@ -1,6 +1,6 @@
 # Levarum website
 
-Pre-launch marketing site for Levarum, a trade name of IT Associates, LLC. Plans open Friday, November 13, 2026; the first reports go out Monday, November 16.
+Pre-launch marketing site for Levarum, a trade name of IT Associates, LLC. Plans open Friday, November 13, 2026. Brands are tracked daily, with a weekly digest email (decisions D-58 to D-66, 30 Oct 2026).
 
 Live preview: https://levarum-website.vercel.app
 
