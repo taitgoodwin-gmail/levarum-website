@@ -1,6 +1,8 @@
 # Levarum website
 
-Pre-launch marketing site for Levarum, a trade name of IT Associates, LLC. Plans open Friday, November 13, 2026. Runs and reports are on demand: run a brand any time or on the customer's own schedule, 4 runs per brand a month on every plan, extra runs on credits (product decision, 31 Oct 2026, replacing the fixed run cadence of D-58 and D-59).
+Pre-launch marketing site for Levarum, a trade name of IT Associates, LLC. Plans open Friday, November 13, 2026. Reports are on demand: a report on any brand whenever the customer wants one, or on their own schedule. Every plan includes 4 reports per brand a month, pooled across the account; extra reports are $9 each, 10 for $90; Question packs are $19 a month per brand for 10 more questions. All prices provisional (D-68, D-69, MIN-232 decisions of 1 Nov 2026). The customer-facing word is "report"; "run" stays internal.
+
+The layout is mobile first: `assets/levarum.css` styles phones by default and adds to them at 561, 761 and 881 px.
 
 Live preview: https://levarum-website.vercel.app
 

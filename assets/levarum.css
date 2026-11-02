@@ -110,25 +110,34 @@ a:focus-visible, summary:focus-visible { outline: 2px solid var(--lv-focus); out
 .lv-brand { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 2px; min-height: 44px; justify-content: center; text-decoration: none; }
 .lv-brand__tag { padding-left: 36px; font-size: 12px; line-height: 14px; font-weight: 500; color: var(--lv-ink-muted); letter-spacing: 0.01em; white-space: nowrap; }
 .lv-hero-art { margin-top: 0; }
-@container (max-width: 760px) { .lv-hero-art { margin-top: 0; } }
 
-/* phone header: one row, menu behind a button */
-.lv-nav-mob { display: none; align-items: center; gap: 8px; }
+/* Mobile first: phone styles are the default; wider screens add to them in the breakpoints below */
+.lv-nav-desk { display: none; flex-wrap: wrap; align-items: center; gap: 0 28px; }
+.lv-nav-mob { display: flex; align-items: center; gap: 8px; }
+.lv-m-hide { display: none; }
 .lv-btn-sm { min-height: 40px; padding: 0 16px; font-size: 14px; }
+.lv-brand__tag { font-size: 11px; line-height: 13px; }
+.lv-cta-row > .lv-btn { flex: 1 1 auto; }
+/* decorative illustrations stay small on phones so the copy comes first */
+main img[src*="/img/illustration-"] { max-width: 260px; align-self: center; }
 .lv-menu-m summary { list-style: none; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 14px; border: 1px solid var(--lv-ink); border-radius: 999px; font-size: 14px; font-weight: 500; cursor: pointer; }
 .lv-menu-m summary::-webkit-details-marker { display: none; }
 .lv-menu-m summary::after { content: ""; width: 14px; height: 10px; background: linear-gradient(var(--lv-ink) 0 0) top/100% 2px no-repeat, linear-gradient(var(--lv-ink) 0 0) center/100% 2px no-repeat, linear-gradient(var(--lv-ink) 0 0) bottom/100% 2px no-repeat; }
 .lv-menu-m[open] summary::after { background: linear-gradient(var(--lv-ink) 0 0) center/100% 2px no-repeat; }
 .lv-menu-m__panel { position: absolute; left: 0; right: 0; top: 100%; z-index: 20; display: flex; flex-direction: column; padding: 8px 24px 16px; padding: 8px clamp(16px, 4cqw, 48px) 16px; background: var(--lv-page); border-bottom: 1px solid var(--lv-hairline); box-shadow: 0 8px 24px rgba(4,4,4,0.08); }
 .lv-menu-m__panel .lv-nav-link { padding: 14px 0; border-bottom: 1px solid var(--lv-hairline); font-size: 17px; }
-@container (min-width: 761px) { .lv-wrap > .lv-nav-desk { flex-wrap: wrap; } }
-@container (max-width: 760px) {
-  .lv-nav-desk { display: none !important; }
-  .lv-nav-mob { display: flex; }
-  .lv-m-hide { display: none !important; }
-  .lv-hero-frame { height: auto !important; }
-  .lv-hero-frame figure { padding-bottom: 28px !important; }
+.lv-menu-m__panel .lv-btn { align-self: stretch; }
+
+/* 561 px and up: buttons take their own width */
+@container (min-width: 561px) { .lv-cta-row > .lv-btn { flex: 0 0 auto; } .lv-menu-m__panel .lv-btn { align-self: flex-start; } }
+/* 761 px and up: full tagline, phone-hidden detail and full-size illustrations */
+@container (min-width: 761px) {
+  .lv-brand__tag { font-size: 12px; line-height: 14px; }
+  .lv-m-hide { display: flex; flex-direction: column; gap: 12px; }
+  main img[src*="/img/illustration-"] { max-width: none; align-self: auto; }
 }
+/* 881 px and up: the full nav (with Sign in) fits beside the logo */
+@container (min-width: 881px) { .lv-nav-desk { display: flex; } .lv-nav-mob { display: none; } }
 
 /* dark bands (restored): text, buttons and links on inverse grounds */
 .lv-inv .lv-closer { color: var(--lv-on-inverse-muted); }
@@ -156,26 +165,15 @@ body{margin:0;background:var(--lv-page)}
 /* Current page in the mobile menu */
 .lv-menu-m__panel [aria-current="page"] { text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 6px; }
 
-/* Browsers without container queries (Safari < 16, Firefox < 110): use viewport breakpoints instead */
+/* Browsers without container queries (Safari < 16, Firefox < 110): the same steps on the viewport */
 @supports not (container-type: inline-size) {
-  @media (max-width: 760px) {
-    .lv-nav-desk { display: none !important; }
-    .lv-nav-mob { display: flex; }
-    .lv-m-hide { display: none !important; }
+  @media (min-width: 561px) { .lv-cta-row > .lv-btn { flex: 0 0 auto; } .lv-menu-m__panel .lv-btn { align-self: flex-start; } }
+  @media (min-width: 761px) {
+    .lv-brand__tag { font-size: 12px; line-height: 14px; }
+    .lv-m-hide { display: flex; flex-direction: column; gap: 12px; }
+    main img[src*="/img/illustration-"] { max-width: none; align-self: auto; }
   }
-}
-
-/* Phone: two-button rows fill the width, so stacked buttons are the same width */
-@container (max-width: 560px) { .lv-cta-row > .lv-btn { flex: 1 1 auto; } }
-@supports not (container-type: inline-size) {
-  @media (max-width: 560px) { .lv-cta-row > .lv-btn { flex: 1 1 auto; } }
-}
-/* Phone: tagline a touch smaller so the header fits at 320 px */
-@container (max-width: 760px) { .lv-brand__tag { font-size: 11px; line-height: 13px; } }
-/* Small tablets: the full nav (with Sign in) wraps under the logo below ~850 px, so keep the Menu button up to 880 px */
-@container (max-width: 880px) { .lv-nav-desk { display: none !important; } .lv-nav-mob { display: flex; } }
-@supports not (container-type: inline-size) {
-  @media (max-width: 880px) { .lv-nav-desk { display: none !important; } .lv-nav-mob { display: flex; } }
+  @media (min-width: 881px) { .lv-nav-desk { display: flex; } .lv-nav-mob { display: none; } }
 }
 /* Legal document tabs (Terms, Privacy policy, DPA): at least 44 x 44 px tap area (REQ-39 AC4) */
 nav[aria-label="Legal documents"] a { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; box-sizing: border-box; }
