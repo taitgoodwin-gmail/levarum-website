@@ -2,7 +2,7 @@
 
 Pre-launch marketing site for Levarum, a trade name of IT Associates, LLC. Plans open Friday, November 13, 2026. Reports are on demand: a report on any brand whenever the customer wants one, or on their own schedule. Every plan includes 4 reports per brand a month, pooled across the account; extra reports are $9 each, 10 for $90; Question packs are $19 a month per brand for 10 more questions. All prices provisional (D-68, D-69, MIN-232 decisions of 1 Nov 2026). The customer-facing word is "report"; "run" stays internal.
 
-The layout is mobile first: `assets/levarum.css` styles phones by default and adds to them at 561, 761 and 881 px.
+The layout is mobile first: `assets/levarum.css` styles phones by default and adds to them at 561 and 881 px (the "v9 mobile-first components" section). Phones get a sticky "Choose a plan" bar (`.lv-dock`) that slides in after the first screen; it sits outside `.lv-root` because a container would trap `position: fixed`. Targets, checked 1 Nov 2026 on Lighthouse mobile (local server): performance 96–99, accessibility and best practices 100, no sideways scroll at 320 px, tap targets 44 px or larger, homepage about 7 screens on a 390 × 844 phone.
 
 Live preview: https://levarum-website.vercel.app
 
@@ -19,7 +19,7 @@ Pushing to `main` deploys to production; any other branch gets a preview URL.
 - `vercel.json` turns on clean URLs (`/pricing` serves `pricing.html`). Internal links use clean root paths (`/`, `/pricing`, `/#how`), so no click goes through a redirect.
 - Security headers (CSP, HSTS, nosniff, referrer and permissions policies) and cache headers are set in `vercel.json`.
 - `levarum-website.vercel.app` is served with `X-Robots-Tag: noindex` so the preview host stays out of search until the real domain is live.
-- Fonts (Newsreader, Figtree; SIL OFL 1.1) are self-hosted in `assets/fonts/`.
+- Fonts (Newsreader, Figtree; SIL OFL 1.1) are self-hosted in `assets/fonts/`. Newsreader italic is served as two small static subsets (`newsreader-italic-basic.woff2`, `newsreader-italic-amacron.woff2`, weight 500, opsz 72) because the site only sets a few italic display words; the full italic files would add about 240 KB on the About page.
 - Icons: `favicon.ico`, `img/icon.svg` and `apple-touch-icon.png` come from the Levarum design system's favicon and app tile. `img/og-image.png` (1200 × 630) is the share image.
 - `img/frame-*.webp` are the compressed frame textures; the PNGs stay as a fallback.
 - `/assets/` is cached for 7 days, so every page links the stylesheet as `levarum.css?v=<hash>`. After any change to `levarum.css`, update the `?v=` value on every page (first 8 characters of `sha256sum assets/levarum.css`), or visitors keep the old styles for up to a week.
