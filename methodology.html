@@ -2,6 +2,8 @@
 <html lang="en-US">
 <head>
 <meta charset="utf-8">
+<link rel="preload" href="/assets/fonts/Figtree-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/Newsreader-Variable.woff2" as="font" type="font/woff2" crossorigin>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#ffffff">
 <title>Methodology: how Levarum measures AI visibility</title>
@@ -9,8 +11,6 @@
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/img/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preload" href="/assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Levarum">
 <meta property="og:title" content="Methodology: how Levarum measures AI visibility">
@@ -21,121 +21,158 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Levarum. Know how far you’re heard in AI answers. Raise it.">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="/assets/levarum.css?v=5f46f2f6">
+<link rel="stylesheet" href="/assets/levarum-ds.css?v=2e9403ca">
 </head>
-<body class="has-dock">
-<a class="lv-skip" href="#main">Skip to content</a>
-<div class="lv-root">
-<header style="background: var(--lv-page); border-bottom: 1px solid var(--lv-hairline); position: relative;">
-<div class="lv-wrap" style="padding-top: 10px; padding-bottom: 10px; display: flex; flex-wrap: nowrap; align-items: center; justify-content: space-between; gap: 8px 24px;">
-<a href="/" aria-label="Levarum home. Relevant, by design." class="lv-brand"><img width="572" height="124" src="/img/logo-header.svg" alt="" style="height: 28px; width: auto; display: block;"><span class="lv-brand__tag" aria-hidden="true">Relevant, by design.</span></a>
-<nav aria-label="Main" class="lv-nav-desk">
-<a class="lv-nav-link" href="/#how">How it works</a>
-<a class="lv-nav-link" href="/about">About</a>
-<a class="lv-nav-link" href="/pricing">Pricing</a>
-<a class="lv-nav-link" href="/methodology" aria-current="page" style="text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 6px;">Methodology</a>
-<a class="lv-nav-link" href="/signin">Sign in</a>
-<a class="lv-btn" href="/pricing">Choose a plan</a>
+<body>
+<div style="width:100%;min-height:100%;background:#ffffff;color:#040404;font-family:'Figtree','Helvetica Neue',Arial,sans-serif">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="container">
+<nav class="lv-nav site-nav" aria-label="Main" style="padding:0">
+<a class="brand" href="/" aria-label="Levarum home. Relevant, by design."><img src="/img/ds/lockup-small.svg" alt="Levarum"><small aria-hidden="true">Relevant, by design.</small></a>
+<div class="lv-nav__links"><a href="/#how">How it works</a><a href="/pricing">Pricing</a><a href="/methodology" aria-current="page">Methodology</a><a href="/about">About</a></div>
+<div class="lv-nav__actions"><a class="lv-btn lv-btn--outline" href="/signin">Sign in</a><a class="lv-btn lv-btn--primary" href="/pricing">Choose a plan</a><a class="lv-btn lv-btn--outline menu-btn" href="#site-links">Menu</a></div>
 </nav>
-<div class="lv-nav-mob">
-<details class="lv-menu-m">
-<summary>Menu</summary>
-<nav aria-label="Main, mobile" class="lv-menu-m__panel">
-<a class="lv-nav-link" href="/#how">How it works</a>
-<a class="lv-nav-link" href="/about">About</a>
-<a class="lv-nav-link" href="/pricing">Pricing</a>
-<a class="lv-nav-link" href="/methodology" aria-current="page">Methodology</a>
-<a class="lv-nav-link" href="/signin">Sign in</a>
-<a class="lv-btn" href="/pricing" style="margin-top: 16px;">Choose a plan</a>
-</nav>
-</details>
-</div>
-</div>
 </header>
+
 <main id="main">
-<section aria-labelledby="method-h" style="background: var(--lv-page);">
-<div class="lv-wrap" style="padding-top: clamp(48px, 6cqw, 96px); padding-bottom: clamp(40px, 5cqw, 72px);">
-<div style="display: flex; flex-direction: column; gap: 24px; max-width: 48em;">
+
+<section class="section" aria-labelledby="m-h">
+<div class="container two-col">
+<div class="lv-two">
 <p class="lv-eyebrow">Methodology</p>
-<h1 id="method-h" class="lv-display" style="color: var(--lv-ink);">How we measure, and how sure we are. <span class="lv-closer">Check the work.</span></h1>
-<p class="lv-lead" style="color: var(--lv-ink-body); max-width: 36em;">Every figure in a Levarum report comes from answers we asked for in that report and kept in full. Here is how we ask, how we score, how sure we are and what the numbers can’t tell you.</p>
-<p class="lv-body-sm" role="note" style="align-self: flex-start; background: var(--lv-tint-sun); color: var(--lv-ink); border-radius: var(--lv-radius-sm); padding: 10px 14px; font-weight: 500;">Draft pending legal review. Details may change before launch.</p>
+<h1 id="m-h" class="display">How we measure, and how sure we are. <span class="closer">Check the work.</span></h1>
+<p class="lead" style="margin-top:var(--space-5);color:var(--ink-muted)">Every number in a Levarum report can be traced to the answers behind it. This page explains what we ask, what we count, and when a change is real.</p>
 </div>
-</div>
-</section>
-<section aria-label="How we measure" style="background: var(--lv-page);">
-<div class="lv-wrap" style="padding-bottom: clamp(56px, 7cqw, 96px);">
-<div style="display: flex; flex-direction: column; border-top: 1px solid var(--lv-rule);">
-<div style="display: flex; flex-wrap: wrap; gap: 8px 48px; padding: 32px 0; border-bottom: 1px solid var(--lv-rule);">
-<h2 class="lv-subtitle" style="flex: 1 1 260px; min-width: 0; color: var(--lv-ink);">What we ask, and how</h2>
-<p class="lv-body-lg" style="flex: 2 1 480px; min-width: 0; max-width: 40em; color: var(--lv-ink-body);">Each brand has 25 buyer questions. We suggest them, and you edit and confirm them. For each report we ask each question three times on OpenAI’s model with web search, through the API, from the brand’s location, because the answer can change from one ask to the next. That gives 75 answers per report. We keep every answer and every source it cites. You ask for a report any time, or set a schedule on any day you pick, and each plan includes 4 reports per brand a month. The report email goes out when it’s ready.</p>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 8px 48px; padding: 32px 0; border-bottom: 1px solid var(--lv-rule);">
-<h2 class="lv-subtitle" style="flex: 1 1 260px; min-width: 0; color: var(--lv-ink);">Which engine we ask</h2>
-<p class="lv-body-lg" style="flex: 2 1 480px; min-width: 0; max-width: 40em; color: var(--lv-ink-body);">Today we ask OpenAI’s model with web search, through the API. We will name the exact model here before launch, and every report records it. Results may differ from what an individual ChatGPT user sees. Every report names the engine, model, location and date of the report. We plan to add other engines as add-ons where their terms allow, and each will be reported separately.</p>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 8px 48px; padding: 32px 0; border-bottom: 1px solid var(--lv-rule);">
-<h2 class="lv-subtitle" style="flex: 1 1 260px; min-width: 0; color: var(--lv-ink);">The three scores</h2>
-<p class="lv-body-lg" style="flex: 2 1 480px; min-width: 0; max-width: 40em; color: var(--lv-ink-body);">Mention rate is the share of the report’s answers that name the brand. In the sample report, 31 of 75 answers do, so the mention rate is 41%. Cited rate is the share of answers that link to the brand’s own site. Share of voice is the brand’s share of all mentions among the brand and the rivals you track. Every score is shown with its count, and by topic: three to six groups of questions you can edit.</p>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 8px 48px; padding: 32px 0; border-bottom: 1px solid var(--lv-rule);">
-<h2 class="lv-subtitle" style="flex: 1 1 260px; min-width: 0; color: var(--lv-ink);">Margin of error, and when a change is real</h2>
-<p class="lv-body-lg" style="flex: 2 1 480px; min-width: 0; max-width: 40em; color: var(--lv-ink-body);">AI answers vary, so every score carries a margin of error. We show it at 95% confidence, calculated from the number of answers counted in that report. The three asks of one question aren’t fully independent of each other, so every margin is an estimate. A change since your last report has its own, wider margin. We call a change real only when it clears that margin. Otherwise the report says within normal variation.</p>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 8px 48px; padding: 32px 0; border-bottom: 1px solid var(--lv-rule);">
-<h2 class="lv-subtitle" style="flex: 1 1 260px; min-width: 0; color: var(--lv-ink);">Question hygiene</h2>
-<p class="lv-body-lg" style="flex: 2 1 480px; min-width: 0; max-width: 40em; color: var(--lv-ink-body);">A question that names the brand, or drifts away from what a local buyer would ask, makes a score look better than it is. When you edit and confirm your questions, we flag any that name the brand or drift off-topic. If you change a question later, scores from before and after the change don’t measure quite the same thing.</p>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 8px 48px; padding: 32px 0; border-bottom: 1px solid var(--lv-rule);">
-<h2 class="lv-subtitle" style="flex: 1 1 260px; min-width: 0; color: var(--lv-ink);">What we don’t claim</h2>
-<p class="lv-body-lg" style="flex: 2 1 480px; min-width: 0; max-width: 40em; color: var(--lv-ink-body);">A sampled answer is evidence from that report, not a guarantee of future visibility. We don’t promise that a brand will be named or cited, and we don’t claim that a next action caused a change in a score. We measure and suggest. The agency, or the business on Solo, decides what to change. We never contact an agency’s clients about Levarum.</p>
-</div>
-<div style="display: flex; flex-wrap: wrap; gap: 8px 48px; padding: 32px 0; border-bottom: 1px solid var(--lv-rule);">
-<h2 class="lv-subtitle" style="flex: 1 1 260px; min-width: 0; color: var(--lv-ink);">Alerts and trends</h2>
-<p class="lv-body-lg" style="flex: 2 1 480px; min-width: 0; max-width: 40em; color: var(--lv-ink-body);">When a report is ready, we send an alert email if the brand or a tracked rival has moved 15 points or more since the previous report. A 15-point move can still sit inside its margin of error, so check the margin in the report before you call it a change. From the fourth report, each score also shows a rolling trend across recent reports.</p>
-</div>
-</div>
+<img src="/img/ds/rings.svg" alt="" style="width:100%;max-width:520px;justify-self:end">
 </div>
 </section>
-<section aria-labelledby="band-h" style="background: var(--lv-page);">
-<div class="lv-wrap" style="padding-bottom: clamp(56px, 7cqw, 96px);">
-<div class="lv-frame-sky" style="border-radius: var(--lv-radius-2xl); padding: clamp(32px, 5cqw, 72px); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 32px 48px;">
-<div style="flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px;">
-<h2 id="band-h" class="lv-headline" style="color: var(--lv-ink);">See the method in a sample report.</h2>
-<p class="lv-lead" style="color: var(--lv-ink);">The sample uses a made-up brand and shows each score with its count and margin of error.</p>
+
+<section class="section section--mist" aria-labelledby="ask-h">
+<div class="container">
+<div class="section-head lv-two"><h2 id="ask-h" class="headline">What we ask, and how. <span class="closer">75 answers per report.</span></h2></div>
+<ol class="steps" style="margin:0;padding:0;list-style:none">
+<li class="step"><h3>25 questions, confirmed by you</h3><p>Levarum suggests 25 buyer questions in 3 to 6 topics and flags any that are leading or off-topic. You edit and confirm them. A brand's first report only runs after you do.</p></li>
+<li class="step"><h3>Asked three times each</h3><p>Each question is asked three times on ChatGPT with web search, through the OpenAI API, from the brand's location. That gives 75 answers per report. The asks are made fresh for every report.</p></li>
+<li class="step"><h3>Everything kept</h3><p>Every answer and every source it cites is stored with the report, cleaned for safe display, and searchable. Nothing is sampled away.</p></li>
+<li class="step"><h3>On demand, or scheduled</h3><p>Reports run when you click Run now or on an optional schedule you set. Each plan includes four reports per brand a month. An email goes out once per report when it is ready.</p></li>
+</ol>
 </div>
-<div class="lv-cta-row" style="display: flex; flex-wrap: wrap; gap: 12px 16px;">
-<a class="lv-btn" href="/#sample">See a sample report</a>
-<a class="lv-btn lv-btn-outline" href="/pricing">Choose a plan</a>
+</section>
+
+<section class="section" aria-labelledby="eng-h">
+<div class="container two-col">
+<div class="lv-two">
+<h2 id="eng-h" class="title">Which engine we ask. <span class="closer">Named on every report.</span></h2>
+<div class="prose">
+<p>At launch Levarum measures ChatGPT: OpenAI's <strong>gpt-5.4-nano</strong> with live web search, called through the Responses API. Each ask is made from the brand's location so the engine searches as a local buyer would.</p>
+<p>Results through the API can differ from what one person sees in the ChatGPT app on one day. That is one reason every question is asked three times, and why each report names the engine, model, location and date it ran on.</p>
+<p>Google Gemini, Perplexity and Claude are rolling out next, on the same 25 questions and the same scoring. We never claim a result for an engine we have not asked.</p>
+</div>
+</div>
+<div class="lv-frame lv-frame--ice frame-clip">
+<div class="rep" role="img" aria-label="Report header listing engine, model, location and date">
+<div class="rep__head"><b>Report details</b><span>Illustrative</span></div>
+<div class="rep__rows" style="padding-top:12px">
+<div class="rep__row" style="grid-template-columns:140px 1fr"><span>Engine</span><span>ChatGPT, with web search</span></div>
+<div class="rep__row" style="grid-template-columns:140px 1fr"><span>Model</span><span>gpt-5.4-nano (OpenAI Responses API)</span></div>
+<div class="rep__row" style="grid-template-columns:140px 1fr"><span>Location</span><span>Portland, OR, United States</span></div>
+<div class="rep__row" style="grid-template-columns:140px 1fr"><span>Run</span><span>2 Nov 2026, 14:12–14:41 UTC</span></div>
+<div class="rep__row" style="grid-template-columns:140px 1fr"><span>Answers</span><span>75 of 75 collected</span></div>
+</div>
 </div>
 </div>
 </div>
 </section>
+
+<section class="section section--mist" aria-labelledby="sc-h">
+<div class="container">
+<div class="section-head lv-two"><h2 id="sc-h" class="headline">The three scores. <span class="closer">Each with its count.</span></h2><p class="lead">A score is a share of the 75 answers. Each is shown with the count behind it, its 95% margin of error, and a breakdown by topic.</p></div>
+<div class="table-box">
+<table class="score-table">
+<thead><tr><th scope="col">Score</th><th scope="col">What it counts</th><th scope="col">Sample report</th></tr></thead>
+<tbody>
+<tr><td>Mention rate</td><td>The share of answers that name the brand, by its name or a confirmed alias.</td><td>31 of 75 answers name Northfield Coffee: 41%, ±11.</td></tr>
+<tr><td>Cited rate</td><td>The share of answers that cite the brand's own website as a source.</td><td>12 of 75 answers link to northfieldcoffee.com: 16%, ±8.</td></tr>
+<tr><td>Share of voice</td><td>The brand's share of all mentions among the brand and the rivals you track. Rivals are matched by name and website the same way.</td><td>Northfield holds 26% of 118 mentions across six brands, ±9.</td></tr>
+</tbody>
+</table>
+</div>
+<p class="muted body-sm" style="margin-top:var(--space-4)">Topics are groups of three to six questions. You can edit them, and each score is also shown per topic so you can see where a rival is named instead.</p>
+</div>
+</section>
+
+<section class="band" aria-labelledby="mg-h">
+<div class="container two-col">
+<div class="lv-two">
+<h2 id="mg-h" class="headline">Margin of error, and when a change is real. <span class="closer">No wins by rounding.</span></h2>
+<ul class="lv-list" style="margin-top:var(--space-6)">
+<li aria-current="true"><div><strong>Every score carries a 95% margin</strong><p>The margin is computed from the number of answers counted in the report. With 75 answers a share near 40% carries about ±11 points. Fewer answers, wider margin.</p></div></li>
+<li><div><strong>It is an estimate</strong><p>The three asks of one question are not fully independent, so every margin is an estimate and the report says so.</p></div></li>
+<li><div><strong>A rival inside your margin is not behind you</strong><p>When a rival's score sits inside your margin, the report says the two are too close to call rather than ranking them.</p></div></li>
+<li><div><strong>Per-report, at launch</strong><p>Each report stands on its own. Change between reports, with its own wider margin, and trend lines follow after launch.</p></div></li>
+</ul>
+</div>
+<div class="lv-frame lv-frame--sun frame-clip">
+<div class="rep" role="img" aria-label="Three scores shown with their margins of error">
+<div class="rep__head"><b>Scores with margins</b><span>95% confidence</span></div>
+<div class="rep__scores" style="border-bottom:0">
+<div class="rep__score"><small>Mention rate</small><b>41%</b><em>31 of 75 · ±11</em></div>
+<div class="rep__score"><small>Cited rate</small><b>16%</b><em>12 of 75 · ±8</em></div>
+<div class="rep__score"><small>Share of voice</small><b>26%</b><em>of 118 mentions · ±9</em></div>
+</div>
+<div class="rep__rows" style="padding-top:0"><p style="padding:8px 0 12px;color:#5c5f66;font-size:12px;border-top:1px solid #e8e8e8">Stumptown's share of voice (31%, ±10) sits inside Northfield's margin. Too close to call.</p></div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section" aria-labelledby="hy-h">
+<div class="container cols-3">
+<div class="card card--mist"><h3>Question hygiene</h3><p>Suggested questions are checked for leading phrasing ("Why is Northfield the best…"), for naming the brand, and for being off-topic for the brand's category. Flagged questions are shown with the reason. You decide what stays.</p></div>
+<div class="card card--mist"><h3>Matching brands and rivals</h3><p>A brand is matched in an answer by its name and the aliases you confirm. A citation is matched to the brand's website domain. Rivals are matched the same way, so share of voice compares like with like.</p></div>
+<div class="card card--mist"><h3>Summary and next actions</h3><p>The summary (about 120 words) and 3 to 6 next actions are drafted by the model from this report's answers only. Every number in them is checked against the scores before the report is shown.</p></div>
+</div>
+</section>
+
+<section class="section section--mist" aria-labelledby="no-h">
+<div class="container two-col">
+<div class="lv-two">
+<h2 id="no-h" class="title">What we don't claim. <span class="closer">Read this too.</span></h2>
+<div class="prose">
+<p>We do not claim to know what one ChatGPT user saw on one day. We measure a pattern across 75 fresh answers from a stated location.</p>
+<p>We do not claim an engine we have not asked. Gemini, Perplexity and Claude are not in a report until they are.</p>
+<p>We do not claim a score moved unless it moved more than its margin. Until change-between-reports ships, each report is read on its own.</p>
+<p>We do not promise rankings, traffic or revenue. We show you whether you are in the answer, and give you the evidence.</p>
+</div>
+</div>
+<img src="/img/ds/lever.svg" alt="" style="width:100%;max-width:480px;justify-self:end">
+</div>
+</section>
+
+<section class="cta-wrap" style="padding-top:var(--space-9)">
+<div class="container">
+<div class="lv-cta" style="background:var(--mist)">
+<div><h2>See the method in a sample report.</h2><p>The sample on the home page uses an invented brand, Northfield Coffee, so you can read a full report before you buy.</p><div style="display:flex;gap:12px;flex-wrap:wrap"><a class="lv-btn lv-btn--primary" href="/#sample">See the sample</a><a class="lv-btn lv-btn--outline" href="/pricing">Choose a plan</a></div></div>
+<img src="/img/ds/radial.svg" alt="" style="width:320px">
+</div>
+</div>
+</section>
+
 </main>
-<footer class="lv-foot">
-<div class="lv-wrap lv-foot__inner">
-<div class="lv-stack" style="gap: 10px;">
-<a href="/" aria-label="Levarum home" style="display: inline-flex; align-self: flex-start;"><img width="572" height="186" loading="lazy" decoding="async" src="/img/logo-footer.svg" alt="Levarum. Relevant, by design." style="height: 52px; width: auto; display: block;"></a>
-<p class="lv-note" style="max-width: 36em;">Levarum is coined from the Latin <em lang="la">levāre</em>: to raise. It’s the root behind relevant and elevate. When someone asks an AI a question, we show you which brands the answer raises, and whether yours is one of them.</p>
+
+<footer class="site-footer">
+<div class="container">
+<div class="lv-footer">
+<div><img src="/img/ds/lockup-tagline.svg" alt="Levarum. Relevant, by design." style="height:64px"><p class="muted body-sm" style="margin-top:var(--space-4);max-width:36ch">Levarum, from the Latin <em>levāre</em>, to raise. The same root gives us lever, elevate and relevant.</p><small>© 2026 IT Associates, LLC. Payments by Stripe.</small></div>
+<div id="site-links"><h5>Product</h5><a href="/#how">How it works</a><a href="/pricing">Pricing</a><a href="/methodology">Methodology</a><a href="/signin">Sign in</a></div>
+<div><h5>Company</h5><a href="/about">About</a><a href="mailto:support@levarum.com">support@levarum.com</a></div>
+<div><h5>Legal</h5><a href="/terms">Terms of service</a><a href="/privacy">Privacy policy</a><a href="/dpa">Data Processing Agreement</a></div>
+<div><h5>Sub-processors</h5><span class="body-sm muted">Stripe (payments)<br>OpenAI (answers, summaries)<br>Amazon Web Services (hosting)</span></div>
 </div>
-<nav aria-label="Footer">
-<a href="/#how">How it works</a>
-<a href="/pricing">Pricing</a>
-<a href="/about">About</a>
-<a href="/methodology">Methodology</a>
-<a href="/terms">Terms</a>
-<a href="/privacy">Privacy policy</a>
-<a href="/dpa">Data Processing Agreement</a>
-<a href="/signin">Sign in</a>
-<a class="lv-foot__wide" href="mailto:support@levarum.com">support@levarum.com</a>
-</nav>
-<p class="lv-foot__legal">© 2026 IT Associates, LLC. Levarum is a trade name of IT Associates, LLC. Payments by Stripe. ChatGPT is a trademark of OpenAI; Levarum is not affiliated with OpenAI.</p>
+<p class="legal">ChatGPT is a trademark of OpenAI. Levarum is not affiliated with OpenAI. Questions: <a href="mailto:support@levarum.com">support@levarum.com</a></p>
 </div>
 </footer>
-</div>
-<div class="lv-dock" role="region" aria-label="Choose a plan">
-<p class="lv-dock__txt"><strong>From $79 a month</strong>Plans open Nov 13</p>
-<a class="lv-btn" href="/pricing">Choose a plan</a>
 </div>
 </body>
 </html>
