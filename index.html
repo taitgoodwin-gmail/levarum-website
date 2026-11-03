@@ -2,15 +2,15 @@
 <html lang="en-US">
 <head>
 <meta charset="utf-8">
+<link rel="preload" href="/assets/fonts/Figtree-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/Newsreader-Variable.woff2" as="font" type="font/woff2" crossorigin>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#ffffff">
-<title>Levarum: on-demand AI visibility reports for agencies</title>
+<title>Levarum — AI visibility reports for businesses and agencies</title>
 <meta name="description" content="AI visibility reports on demand for each client brand, scored against its own local rivals, with a margin of error on every score. Get a report on any brand whenever you want one, or on your own schedule. From $79 a month, or about $40 a brand on Agency 15.">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/img/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preload" href="/assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Levarum">
 <meta property="og:title" content="Levarum: on-demand AI visibility reports for agencies">
@@ -21,209 +21,188 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Levarum. Know how far you’re heard in AI answers. Raise it.">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="/assets/levarum.css?v=5f46f2f6">
+<link rel="stylesheet" href="/assets/levarum-ds.css?v=2e9403ca">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Levarum", "legalName": "IT Associates, LLC", "url": "https://levarum-website.vercel.app/", "logo": "https://levarum-website.vercel.app/img/icon.svg"}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "Levarum AI visibility tracking", "brand": {"@type": "Brand", "name": "Levarum"}, "description": "On-demand AI visibility reports for agencies: each client brand against its local rivals, with the margin of error shown. Get a report on any brand whenever you want one, or on your own schedule.", "offers": [{"@type": "Offer", "name": "Solo", "price": "79", "priceCurrency": "USD", "url": "https://levarum-website.vercel.app/pricing", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "79", "priceCurrency": "USD", "unitText": "MONTH"}}, {"@type": "Offer", "name": "Agency 5", "price": "249", "priceCurrency": "USD", "url": "https://levarum-website.vercel.app/pricing", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "249", "priceCurrency": "USD", "unitText": "MONTH"}}, {"@type": "Offer", "name": "Agency 15", "price": "599", "priceCurrency": "USD", "url": "https://levarum-website.vercel.app/pricing", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "599", "priceCurrency": "USD", "unitText": "MONTH"}}]}</script>
 </head>
-<body class="has-dock">
-<a class="lv-skip" href="#main">Skip to content</a>
-<div class="lv-root">
-<header style="background: var(--lv-page); border-bottom: 1px solid var(--lv-hairline); position: relative;">
-<div class="lv-wrap" style="padding-top: 10px; padding-bottom: 10px; display: flex; flex-wrap: nowrap; align-items: center; justify-content: space-between; gap: 8px 24px;">
-<a href="/" aria-label="Levarum home. Relevant, by design." class="lv-brand"><img width="572" height="124" src="/img/logo-header.svg" alt="" style="height: 28px; width: auto; display: block;"><span class="lv-brand__tag" aria-hidden="true">Relevant, by design.</span></a>
-<nav aria-label="Main" class="lv-nav-desk">
-<a class="lv-nav-link" href="/#how">How it works</a>
-<a class="lv-nav-link" href="/about">About</a>
-<a class="lv-nav-link" href="/pricing">Pricing</a>
-<a class="lv-nav-link" href="/methodology">Methodology</a>
-<a class="lv-nav-link" href="/signin">Sign in</a>
-<a class="lv-btn" href="/pricing">Choose a plan</a>
+<body>
+<div style="width:100%;min-height:100%;background:#ffffff;color:#040404;font-family:'Figtree','Helvetica Neue',Arial,sans-serif">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="container">
+<nav class="lv-nav site-nav" aria-label="Main" style="padding:0">
+<a class="brand" href="/" aria-label="Levarum home. Relevant, by design."><img src="/img/ds/lockup-small.svg" alt="Levarum"><small aria-hidden="true">Relevant, by design.</small></a>
+<div class="lv-nav__links"><a href="#how" aria-current="page">How it works</a><a href="/pricing">Pricing</a><a href="/methodology">Methodology</a><a href="/about">About</a></div>
+<div class="lv-nav__actions"><a class="lv-btn lv-btn--outline" href="/signin">Sign in</a><a class="lv-btn lv-btn--primary" href="/pricing">Choose a plan</a><a class="lv-btn lv-btn--outline menu-btn" href="#site-links">Menu</a></div>
 </nav>
-<div class="lv-nav-mob">
-<details class="lv-menu-m">
-<summary>Menu</summary>
-<nav aria-label="Main, mobile" class="lv-menu-m__panel">
-<a class="lv-nav-link" href="/#how">How it works</a>
-<a class="lv-nav-link" href="/about">About</a>
-<a class="lv-nav-link" href="/pricing">Pricing</a>
-<a class="lv-nav-link" href="/methodology">Methodology</a>
-<a class="lv-nav-link" href="/signin">Sign in</a>
-<a class="lv-btn" href="/pricing" style="margin-top: 16px;">Choose a plan</a>
-</nav>
-</details>
-</div>
-</div>
 </header>
+
 <main id="main">
-<section class="lv-hero2" aria-labelledby="hero-h">
-<div class="lv-wrap lv-hero2__grid">
-<div class="lv-stack lv-stack--lg lv-hero2__copy">
-<p class="lv-chip">For agencies serving local businesses</p>
-<h1 id="hero-h" class="lv-display">Know how far you’re heard in AI answers. <span class="lv-closer lv-closer--accent">Raise it.</span></h1>
-<p class="lv-hero2__lead">Each client brand against its local rivals, with the margin of error shown, in a report you can send.</p>
-<div class="lv-hero2__actions">
-<a class="lv-btn" href="/pricing">Choose a plan</a>
-<a class="lv-textlink" href="#sample">See a sample report</a>
+
+<section class="hero" aria-labelledby="hero-h">
+<div class="container">
+<div class="lv-two">
+<span class="chip">For businesses and marketing agencies</span>
+<h1 id="hero-h" class="display-lg" style="max-width:12ch">Know how far you're heard in AI answers. <span class="closer">Raise it.</span></h1>
+<p class="lead">Levarum asks ChatGPT the 25 questions your buyers ask, 75 times per report, and shows whether it names your brand or a local rival. Scores carry their margin of error. Every answer and source is kept.</p>
+<div class="actions"><a class="lv-btn lv-btn--inverse" href="/pricing">Choose a plan</a><a class="lv-btn lv-btn--outline" href="#sample" style="color:#ffffff;border-color:#ffffff">See a sample report</a></div>
 </div>
-<p class="lv-hero2__note"><strong>Plans open Friday, November 13, 2026.</strong> From $79 a month, or about $40 a brand on Agency 15.</p>
+<div class="frame-wrap">
+<img class="arch" src="/img/ds/arch.svg" alt="">
+<div class="lv-frame">
+<div class="rep" role="img" aria-label="Sample report for Northfield Coffee, Portland: mention rate 41 percent, cited rate 16 percent, share of voice 26 percent, each with a margin of error">
+<div class="rep__head"><b>Northfield Coffee · Portland, OR</b><span>Report 3 · ChatGPT with web search · Illustrative</span></div>
+<div class="rep__scores">
+<div class="rep__score"><small>Mention rate</small><b>41%</b><em>31 of 75 · ±11</em></div>
+<div class="rep__score"><small>Cited rate</small><b>16%</b><em>12 of 75 · ±8</em></div>
+<div class="rep__score"><small>Share of voice</small><b>26%</b><em>vs 5 rivals · ±9</em></div>
 </div>
-<div id="sample" class="lv-report lv-frame-sky">
-<figure class="lv-report__sheet" aria-labelledby="sample-cap">
-<div>
-<p class="lv-report__meta">Sample report, made-up brand, not a client result</p>
-<p id="sample-cap" class="lv-report__title">Northfield Coffee, Portland</p>
-<p class="lv-report__sub">Report of Nov 23, 2026. OpenAI’s model with web search, asked from Portland, OR. 75 answers.</p>
+<div class="rep__rows">
+<div class="rep__row is-you"><span>Northfield Coffee</span><div class="lv-meter" style="--v:26%"><i></i></div><b>26%</b></div>
+<div class="rep__row"><span>Stumptown Coffee</span><div class="lv-meter" style="--v:31%"><i></i></div><b>31%</b></div>
+<div class="rep__row"><span>Coava Coffee</span><div class="lv-meter" style="--v:19%"><i></i></div><b>19%</b></div>
+<div class="rep__row"><span>Heart Coffee</span><div class="lv-meter" style="--v:14%"><i></i></div><b>14%</b></div>
 </div>
-<dl class="lv-scores">
-<div><dt>Mention rate</dt><dd class="lv-score__n">41%</dd><dd class="lv-score__d">31 of 75 answers, ±11 pts</dd></div>
-<div><dt>Cited rate</dt><dd class="lv-score__n">16%</dd><dd class="lv-score__d">12 of 75 link to its site, ±8 pts</dd></div>
-<div><dt>Share of voice</dt><dd class="lv-score__n">26%</dd><dd class="lv-score__d">against 3 local rivals, ±8 pts</dd></div>
-</dl>
-<p class="lv-report__change">Mention rate +5 pts since the last report, ±16. <strong>Within normal variation.</strong></p>
-<div class="lv-stack" style="gap: 10px;">
-<p style="margin: 0; font-size: 13px; line-height: 18px; font-weight: 500;">Who the answers name instead</p>
-<ul class="lv-bars" role="list">
-<li><span>Harbor Roasters</span><span class="lv-bar" aria-hidden="true"><span style="width: 100%;"></span></span><span class="lv-pct">37%</span></li>
-<li class="is-you"><span>Northfield Coffee</span><span class="lv-bar" aria-hidden="true"><span style="width: 70%;"></span></span><span class="lv-pct">26%</span></li>
-<li><span>Kettle &amp; Crane</span><span class="lv-bar" aria-hidden="true"><span style="width: 62%;"></span></span><span class="lv-pct">23%</span></li>
-<li><span>Brightline Beans</span><span class="lv-bar" aria-hidden="true"><span style="width: 38%;"></span></span><span class="lv-pct">14%</span></li>
-</ul>
 </div>
-<div class="lv-report__action">
-<p><strong>Weakest topic: espresso at home.</strong> 3 of 15 answers name the brand.</p>
-<p>Next action: answer the five espresso questions on your own site.</p>
 </div>
-</figure>
 </div>
 </div>
 </section>
 
-<section id="how" class="lv-sec lv-sec--inv" aria-labelledby="how-h" style="border-top: 1px solid var(--lv-inverse-rule);">
-<div class="lv-wrap lv-stack lv-stack--lg">
-<div class="lv-split lv-split--even">
-<div class="lv-stack">
-<h2 id="how-h" class="lv-headline">Set it up once. Get a finished report whenever you want one.</h2>
-<p class="lv-muted" style="margin: 0;">A screenshot of one AI answer can’t show what changed. Asking the same questions every time, and keeping every answer, can.</p>
-</div>
-<img class="lv-illo" width="640" height="440" loading="lazy" decoding="async" src="/img/illustration-a85e7f0f.svg" alt="">
-</div>
-<ol class="lv-steps" role="list">
-<li style="--c: var(--lv-ill-ember);"><h3>Add the brand and its rivals</h3><p>Name 3 to 10 local competitors. After the first report we suggest others AI names alongside it.</p></li>
-<li style="--c: var(--lv-accent);"><h3>Confirm 25 buyer questions</h3><p>We suggest them, you edit them. We flag questions that would flatter the score.</p></li>
-<li style="--c: var(--lv-sun);"><h3>We ask each one three times</h3><p>Answers change between asks, so each report holds 75 answers, every one kept with its sources.</p></li>
-<li style="--c: var(--lv-ice);"><h3>Your report arrives</h3><p>An email links to it. It reads well on a phone, prints cleanly and exports to CSV.</p></li>
+<section class="section" id="how" aria-labelledby="how-h">
+<div class="container">
+<div class="section-head lv-two"><h2 id="how-h" class="headline">Set it up once. <span class="closer">Get a finished report whenever you want one.</span></h2><p class="lead">No fixed clock. Click Run now when you need a report, or set an optional schedule. Each plan includes four reports per brand a month.</p></div>
+<ol class="steps" style="margin:0;padding:0;list-style:none">
+<li class="step"><h3>Add the brand</h3><p>Name, location and website, plus 3 to 10 local rivals you want to be measured against. Agencies add each client brand to one account.</p></li>
+<li class="step"><h3>Confirm 25 buyer questions</h3><p>Levarum suggests 25 questions in 3 to 6 topics, flags any that lead the witness, and you edit and confirm them. Nothing runs until you do.</p></li>
+<li class="step"><h3>Click Run now</h3><p>Each question is asked three times on ChatGPT with web search, from the brand's location. That is 75 answers per report, every one kept with its sources.</p></li>
+<li class="step"><h3>Read the report</h3><p>Scores with margins, a short summary and 3 to 6 next actions arrive on the web and by email. Print it, export the CSV, or send it to a client.</p></li>
 </ol>
 </div>
 </section>
 
-<section class="lv-sec" aria-labelledby="report-h">
-<div class="lv-wrap lv-split">
-<div class="lv-stack">
-<h2 id="report-h" class="lv-headline">Each brand against its own local rivals. <span class="lv-closer">Read the evidence.</span></h2>
-<p class="lv-muted" style="margin: 0;">The answer comes first, then the evidence behind it. Tap a row to see what’s in it.</p>
-<img class="lv-illo" width="640" height="440" loading="lazy" decoding="async" src="/img/illustration-48159eb1.svg" alt="">
-</div>
-<div class="lv-acc">
-<details><summary>Summary</summary><p>One paragraph: where the brand stands, the gap to the leading local rival and what matters most. Every figure comes from that report’s answers.</p></details>
-<details><summary>Three to six next actions</summary><p>Each tied to the finding behind it, such as a weak topic or a source AI keeps citing.</p></details>
-<details><summary>Three scores</summary><p>Mention rate: how many answers name the brand. Cited rate: how many link to its own site. Share of voice: its share of all mentions among the brand and the rivals you track.</p></details>
-<details><summary>Change you can defend</summary><p>Each score shows its change since the last report and the margin of error, labeled “real change” or “within normal variation.” From the fourth report, each score also shows a rolling trend.</p></details>
-<details><summary>Topics</summary><p>Questions grouped into three to six topics you can edit, with the weakest highlighted, so you know where to act first.</p></details>
-<details><summary>Every answer and source</summary><p>All 75 answers in full and searchable, with the sources each one cited as links you can open.</p></details>
-<details><summary>Alerts on big moves</summary><p>An email when the brand or a tracked rival moves 15 points or more from one report to the next.</p></details>
-</div>
-</div>
-</section>
-
-<section class="lv-sec lv-sec--mist" aria-labelledby="agency-h">
-<div class="lv-wrap lv-split">
-<div class="lv-stack">
-<h2 id="agency-h" class="lv-headline">Your report, in your brand. <span class="lv-closer">Send it.</span></h2>
-</div>
-<ul class="lv-points" role="list">
-<li><h3>Your agency’s name on every report</h3><p>On Agency plans, every report and report email carries your name instead of ours.</p></li>
-<li><h3>One login, every client brand</h3><p>Agency 5 holds five brands and Agency 15 holds fifteen, each with its own questions, rivals and report. Agency plans open once our account-isolation check passes.</p></li>
-<li><h3>Your clients stay yours</h3><p>We never contact your clients about Levarum, and we don’t sell or rent your data or theirs.</p></li>
+<section class="section section--mist" id="sample" aria-labelledby="ev-h">
+<div class="container two-col">
+<div class="lv-two">
+<h2 id="ev-h" class="title">Each brand against its own local rivals. <span class="closer">Read the evidence.</span></h2>
+<ul class="lv-list" style="margin-top:var(--space-6)">
+<li aria-current="true"><div><strong>Three scores, each with its count and margin</strong><p>Mention rate, cited rate and share of voice, at 95% confidence. A score is never shown without the number of answers behind it.</p></div></li>
+<li><div><strong>A summary and 3 to 6 next actions</strong><p>Written from the answers in this report, with every number checked against the scores before it is shown to you.</p></div></li>
+<li><div><strong>Scores by topic</strong><p>Questions sit in 3 to 6 topics you can edit, so you see where you are heard and where a rival is named instead.</p></div></li>
+<li><div><strong>Every answer and every source</strong><p>All 75 answers, searchable, with the sites ChatGPT cited. The method is the same on every plan.</p></div></li>
 </ul>
+<a class="lv-btn lv-btn--primary" href="/methodology" style="margin-top:var(--space-6)">Read the methodology</a>
+</div>
+<div class="lv-frame frame-clip">
+<div class="rep" role="img" aria-label="Report detail: mention rate by topic with the weakest topic marked">
+<div class="rep__head"><b>Mention rate by topic</b><span>31 of 75 answers name the brand</span></div>
+<div class="rep__rows" style="padding-top:12px">
+<div class="rep__row"><span>Best coffee near me</span><div class="lv-meter" style="--v:67%;--c:var(--accent)"><i></i></div><b>10 / 15</b></div>
+<div class="rep__row"><span>Cafés with wifi</span><div class="lv-meter" style="--v:53%;--c:var(--accent)"><i></i></div><b>8 / 15</b></div>
+<div class="rep__row"><span>Coffee beans to buy</span><div class="lv-meter" style="--v:40%;--c:var(--accent)"><i></i></div><b>6 / 15</b></div>
+<div class="rep__row"><span>Brunch spots</span><div class="lv-meter" style="--v:33%;--c:var(--accent)"><i></i></div><b>5 / 15</b></div>
+<div class="rep__row"><span>Catering and events</span><div class="lv-meter" style="--v:13%;--c:var(--ember)"><i></i></div><b>2 / 15</b></div>
+<p style="margin-top:12px;color:#5c5f66;font-size:12px">Weakest topic: Catering and events. Rivals named instead: Stumptown (7), Coava (4).</p>
+</div>
+</div>
+</div>
 </div>
 </section>
 
-<section class="lv-sec lv-sec--inv" aria-labelledby="limits-h">
-<div class="lv-wrap lv-stack lv-stack--lg">
-<h2 id="limits-h" class="lv-headline">Three things we refuse to do.</h2>
-<ul class="lv-refusals" role="list">
-<li style="--c: var(--lv-ill-ember);"><h3>Call a swing a win</h3><p>A change is real only when it clears its margin of error. Otherwise the report says within normal variation.</p></li>
-<li style="--c: var(--lv-accent);"><h3>Claim an engine we haven’t asked</h3><p>Every report names the engine, model, location and date. Today that is OpenAI’s model with web search, through the API. Results may differ from what an individual ChatGPT user sees.</p></li>
-<li style="--c: var(--lv-sun);"><h3>Step between you and your client</h3><p>We measure and suggest. You decide what to change.</p></li>
+<section class="band" aria-labelledby="ag-h">
+<div class="container two-col">
+<div class="lv-two">
+<p class="lv-eyebrow" style="color:var(--on-inverse-muted)">For agencies</p>
+<h2 id="ag-h" class="headline">Your report, in your name. <span class="closer">Send it.</span></h2>
+<ul class="lv-list" style="margin-top:var(--space-6)">
+<li aria-current="true"><div><strong>Agency reports carry your agency's name</strong><p>Every report for every client brand is headed with your name, not ours.</p></div></li>
+<li><div><strong>One login, every client</strong><p>Five brands on Agency 5, fifteen on Agency 15. Switch between them from one home page with each brand's status in view.</p></div></li>
+<li><div><strong>We never step between you and your client</strong><p>Levarum does not contact your clients and does not sell or rent their data.</p></div></li>
 </ul>
-<p class="lv-muted" style="margin: 0;">A sampled answer is evidence from that report, not a guarantee of future visibility. <a class="lv-link" href="/methodology">Read how we measure</a></p>
+<a class="lv-btn lv-btn--primary" href="/pricing" style="margin-top:var(--space-6)">See agency plans</a>
 </div>
-</section>
-
-<section class="lv-sec" aria-labelledby="plans-h">
-<div class="lv-wrap lv-split">
-<div class="lv-stack">
-<h2 id="plans-h" class="lv-headline">Pick by how many brands you look after.</h2>
-<p class="lv-muted" style="margin: 0;">Every plan gets the same report and 4 reports per brand a month. Prices are provisional until plans open.</p>
+<div class="lv-frame lv-frame--ice frame-clip">
+<div class="rep" role="img" aria-label="Agency home showing five client brands with their latest report status">
+<div class="rep__head"><b>Harbor &amp; Co. · 5 brands</b><span>17 of 20 reports left this month</span></div>
+<div class="rep__rows" style="padding-top:12px">
+<div class="rep__row"><span>Northfield Coffee</span><span style="color:#5c5f66">Report ready · 2 Nov</span><b>41%</b></div>
+<div class="rep__row"><span>Pine Street Dental</span><span style="color:#5c5f66">Running · 48 of 75</span><b>—</b></div>
+<div class="rep__row"><span>Rivermark Realty</span><span style="color:#5c5f66">Report ready · 29 Oct</span><b>22%</b></div>
+<div class="rep__row"><span>Alder Physio</span><span style="color:#5c5f66">Confirm questions</span><b>—</b></div>
+<div class="rep__row"><span>Westgate Plumbing</span><span style="color:#5c5f66">Report ready · 28 Oct</span><b>58%</b></div>
 </div>
-<ul class="lv-planrows" role="list">
-<li><a href="/pricing#solo"><span><span class="lv-plan__name">Solo</span><span class="lv-plan__for">1 brand, for a business without an agency</span></span><span class="lv-plan__price">$79<small>a month</small></span></a></li>
-<li><a href="/pricing#agency-5"><span><span class="lv-plan__name">Agency 5</span><span class="lv-plan__for">5 brands, reports in your name</span></span><span class="lv-plan__price">$249<small>about $50 a brand</small></span></a></li>
-<li><a href="/pricing#agency-15"><span><span class="lv-plan__name">Agency 15</span><span class="lv-plan__for">15 brands, reports in your name</span></span><span class="lv-plan__price">$599<small>about $40 a brand</small></span></a></li>
-</ul>
 </div>
-</section>
-
-<section class="lv-sec lv-sec--mist" aria-labelledby="faq-h">
-<div class="lv-wrap lv-split">
-<h2 id="faq-h" class="lv-headline">Questions before you choose a plan.</h2>
-<div class="lv-acc">
-<details><summary>What is Levarum?</summary><p>Levarum measures AI visibility on demand. For each report we ask OpenAI’s model with web search, through the API, the questions a brand’s buyers ask, three times each. Results may differ from what an individual ChatGPT user sees. Each report shows how often answers name and cite the brand against its local rivals, and what to do next.</p></details>
-<details><summary>Who is it for?</summary><p>Marketing agencies of any size that serve local and small businesses. On Agency 5 and Agency 15, each report carries your agency’s name. A business without an agency can use Solo: one brand, $79 a month, with the Levarum name on the report.</p></details>
-<details><summary>Which AI engines does it measure?</summary><p>Today, OpenAI’s model with web search, through the API. Every report names the engine, model, location and date. Other engines come later as add-ons, where their terms allow, and will be reported separately.</p></details>
-<details><summary>What does the margin of error mean?</summary><p>AI answers change between asks, so every score carries a margin of error. A change counts as real only when it clears that margin. Anything smaller is labeled “within normal variation,” so you’re less likely to report a swing as a win. <a class="lv-link" href="/methodology">How we measure</a></p></details>
-<details><summary>How much does it cost?</summary><p>Solo is $79 a month for one brand, Agency 5 is $249 for five and Agency 15 is $599 for fifteen, in US dollars, billed monthly until you cancel. Each plan includes 4 reports per brand a month, pooled across your account. Extra reports are $9 each, sold 10 for $90. Add-ons per brand: Insights $29 a month, Action drafts $49 a month and Question packs $19 a month for 10 more questions. All prices are provisional until plans open.</p></details>
-<details><summary>How is it different from other AI visibility tools?</summary><p>Levarum is built around one comparison: each brand against the local rivals you name in its market. The report shows that comparison, the answers and sources behind it, and next actions tied to what it finds.</p></details>
+</div>
+</div>
+<div class="container">
+<div class="lv-stats">
+<div class="lv-stat"><b>25</b><span>buyer questions you confirm, in 3 to 6 topics</span></div>
+<div class="lv-stat"><b>75</b><span>answers per report, each kept with its sources</span></div>
+<div class="lv-stat"><b>95%</b><span>confidence on every margin of error</span></div>
 </div>
 </div>
 </section>
 
-<section class="lv-sec" aria-labelledby="band-h" style="padding-top: 0;">
-<div class="lv-wrap">
-<div class="lv-band lv-frame-sky">
-<div class="lv-stack" style="gap: 10px;">
-<h2 id="band-h" class="lv-headline" style="color: var(--lv-ink);">Get your first report as soon as you confirm your questions.</h2>
-<p style="margin: 0; color: var(--lv-ink);">Plans open Friday, November 13, 2026. You can change plans later.</p>
-</div>
-<a class="lv-btn" href="/pricing">Choose a plan</a>
+<section class="section" aria-labelledby="ref-h">
+<div class="container">
+<div class="section-head lv-two"><h2 id="ref-h" class="headline">Three things we refuse to do. <span class="closer">On purpose.</span></h2></div>
+<div class="refuse">
+<div><h3>Call a swing a win</h3><p>Every score comes with its margin of error. A move inside that margin is reported as within normal variation, not as progress.</p></div>
+<div><h3>Claim an engine we didn't ask</h3><p>Each report names the engine, model, location and date it was run on. Today that is ChatGPT with web search. Google Gemini, Perplexity and Claude are rolling out next.</p></div>
+<div><h3>Step between you and your client</h3><p>Agency reports carry the agency's name. We do not contact clients, and we do not sell or rent anyone's data.</p></div>
 </div>
 </div>
 </section>
+
+<section class="section section--mist" aria-labelledby="pr-h">
+<div class="container">
+<div class="section-head lv-two"><h2 id="pr-h" class="headline">One report per brand. <span class="closer">Choose how many brands.</span></h2><p class="lead">Every plan includes the same report, four times per brand each month, pooled across your account. Plans open 13 November 2026. Prices are provisional.</p></div>
+<div class="plans">
+<div class="lv-price" style="background:var(--page)"><h3>Solo</h3><p class="lv-price__desc">One brand, for a business tracking itself.</p><div class="lv-price__amount">$79 <small>per month</small></div><a class="lv-btn lv-btn--outline lv-btn--block" href="/signin?plan=solo">Start with Solo</a><hr><strong class="body-sm">Key features</strong><ul><li>1 brand</li><li>4 reports a month</li><li>Reports carry the Levarum name</li></ul></div>
+<div class="lv-price lv-price--featured" style="background:var(--page)"><span class="lv-price__ribbon">About $50 per brand</span><h3>Agency 5</h3><p class="lv-price__desc">Five client brands, or several locations, under your own name.</p><div class="lv-price__amount">$249 <small>per month</small></div><a class="lv-btn lv-btn--primary lv-btn--block" href="/signin?plan=agency5">Start with Agency 5</a><hr><strong class="body-sm">Everything in Solo, plus</strong><ul><li>5 brands</li><li>20 reports a month, pooled</li><li>Your agency's name on every report</li><li>One login to switch brands</li></ul></div>
+<div class="lv-price" style="background:var(--page)"><h3>Agency 15</h3><p class="lv-price__desc">Fifteen brands for larger client lists or groups.</p><div class="lv-price__amount">$599 <small>per month</small></div><a class="lv-btn lv-btn--outline lv-btn--block" href="/signin?plan=agency15">Start with Agency 15</a><hr><strong class="body-sm">Everything in Agency 5, plus</strong><ul><li>15 brands</li><li>60 reports a month, pooled</li><li>About $40 per brand</li></ul></div>
+</div>
+<p class="muted body-sm" style="margin-top:var(--space-5)">Need more reports? Buy 10 for $90. They never expire while you subscribe. US sales tax is added at checkout where it applies. <a href="/pricing">Full pricing details</a></p>
+</div>
+</section>
+
+<section class="section" aria-labelledby="faq-h">
+<div class="container">
+<div class="section-head lv-two"><h2 id="faq-h" class="headline">Questions people ask. <span class="closer">Plain answers.</span></h2></div>
+<div class="lv-acc faq">
+<details open><summary>What is Levarum?</summary><p>A report that shows whether an AI assistant names your brand when people ask the questions your buyers ask, and how often it names a local rival instead. You get three scores with margins of error, a summary, next actions, and every answer and source.</p></details>
+<details><summary>Who is it for?</summary><p>Individual businesses that want to track their own brand (Solo), and marketing agencies that track several client brands under their own name (Agency 5 and Agency 15). The method is identical on every plan.</p></details>
+<details><summary>Which AI engines do you measure?</summary><p>At launch, ChatGPT: OpenAI's model with live web search, through the API, from the brand's location. Results can differ from what one ChatGPT user sees on one day, which is why every question is asked three times and every report names the engine, model, location and date. Google Gemini, Perplexity and Claude are rolling out next.</p></details>
+<details><summary>What does the margin of error mean?</summary><p>Each score is an estimate from 75 answers, so it is shown with a 95% margin of error. If a rival's score sits inside your margin, the report says so instead of calling it a lead. The method is on the methodology page.</p></details>
+<details><summary>What does it cost?</summary><p>Solo is $79 a month for one brand, Agency 5 is $249 for five, Agency 15 is $599 for fifteen. Each includes four reports per brand a month, pooled. Extra reports are $9 each, sold 10 for $90. Prices are provisional until plans open.</p></details>
+<details><summary>How is this different from rank tracking?</summary><p>Search rankings list ten links. An AI assistant gives one answer built from a few sources. Levarum measures whether you are in that answer, whether your site is one of its sources, and how much of the conversation you hold against named rivals.</p></details>
+</div>
+</div>
+</section>
+
+<section class="cta-wrap">
+<div class="container">
+<div class="lv-cta" style="background:var(--mist)">
+<div><h2>Get your first report as soon as you confirm your questions.</h2><p>Set up takes about twenty minutes: add the brand and its rivals, confirm the questions, click Run now.</p><a class="lv-btn lv-btn--primary" href="/pricing">Choose a plan</a></div>
+<svg width="300" height="220" viewBox="0 0 300 220" aria-hidden="true"><defs><filter id="g" color-interpolation-filters="sRGB"><feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="9" result="c"></feTurbulence><feColorMatrix in="c" type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.6 -0.05" result="ca"></feColorMatrix><feComposite in="ca" in2="SourceGraphic" operator="in" result="ci"></feComposite><feBlend in="ci" in2="SourceGraphic" mode="screen" result="b"></feBlend><feComposite in="b" in2="SourceGraphic" operator="in"></feComposite></filter></defs><g filter="url(#g)"><path d="M0 220A220 220 0 0 1 220 0V56A164 164 0 0 0 56 220Z" fill="#3a8cc0"></path><path d="M56 220A164 164 0 0 1 220 56V104A116 116 0 0 0 104 220Z" fill="#68bac6"></path><path d="M104 220A116 116 0 0 1 220 104V152A68 68 0 0 0 152 220Z" fill="#e8ba3c"></path><rect x="220" y="0" width="80" height="56" fill="#6a8f4c"></rect></g></svg>
+</div>
+</div>
+</section>
+
 </main>
-<footer class="lv-foot">
-<div class="lv-wrap lv-foot__inner">
-<div class="lv-stack" style="gap: 10px;">
-<a href="/" aria-label="Levarum home" style="display: inline-flex; align-self: flex-start;"><img width="572" height="186" loading="lazy" decoding="async" src="/img/logo-footer.svg" alt="Levarum. Relevant, by design." style="height: 52px; width: auto; display: block;"></a>
-<p class="lv-note" style="max-width: 36em;">Levarum is coined from the Latin <em lang="la">levāre</em>: to raise. It’s the root behind relevant and elevate. When someone asks an AI a question, we show you which brands the answer raises, and whether yours is one of them.</p>
+
+<footer class="site-footer">
+<div class="container">
+<div class="lv-footer">
+<div><img src="/img/ds/lockup-tagline.svg" alt="Levarum. Relevant, by design." style="height:64px"><p class="muted body-sm" style="margin-top:var(--space-4);max-width:36ch">Levarum, from the Latin <em>levāre</em>, to raise. The same root gives us lever, elevate and relevant.</p><small>© 2026 IT Associates, LLC. Payments by Stripe.</small></div>
+<div id="site-links"><h5>Product</h5><a href="#how">How it works</a><a href="/pricing">Pricing</a><a href="/methodology">Methodology</a><a href="/signin">Sign in</a></div>
+<div><h5>Company</h5><a href="/about">About</a><a href="mailto:support@levarum.com">support@levarum.com</a></div>
+<div><h5>Legal</h5><a href="/terms">Terms of service</a><a href="/privacy">Privacy policy</a><a href="/dpa">Data Processing Agreement</a></div>
+<div><h5>Sub-processors</h5><span class="body-sm muted">Stripe (payments)<br>OpenAI (answers, summaries)<br>Amazon Web Services (hosting)</span></div>
 </div>
-<nav aria-label="Footer">
-<a href="/#how">How it works</a>
-<a href="/pricing">Pricing</a>
-<a href="/about">About</a>
-<a href="/methodology">Methodology</a>
-<a href="/terms">Terms</a>
-<a href="/privacy">Privacy policy</a>
-<a href="/dpa">Data Processing Agreement</a>
-<a href="/signin">Sign in</a>
-<a class="lv-foot__wide" href="mailto:support@levarum.com">support@levarum.com</a>
-</nav>
-<p class="lv-foot__legal">© 2026 IT Associates, LLC. Levarum is a trade name of IT Associates, LLC. Payments by Stripe. ChatGPT is a trademark of OpenAI; Levarum is not affiliated with OpenAI.</p>
+<p class="legal">ChatGPT is a trademark of OpenAI. Levarum is not affiliated with OpenAI. Questions: <a href="mailto:support@levarum.com">support@levarum.com</a></p>
 </div>
 </footer>
-</div>
-<div class="lv-dock" role="region" aria-label="Choose a plan">
-<p class="lv-dock__txt"><strong>From $79 a month</strong>Plans open Nov 13</p>
-<a class="lv-btn" href="/pricing">Choose a plan</a>
 </div>
 </body>
 </html>

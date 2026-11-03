@@ -2,6 +2,8 @@
 <html lang="en-US">
 <head>
 <meta charset="utf-8">
+<link rel="preload" href="/assets/fonts/Figtree-Variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/Newsreader-Variable.woff2" as="font" type="font/woff2" crossorigin>
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#ffffff">
 <title>Levarum pricing: AI visibility reports from $79 a month</title>
@@ -9,8 +11,6 @@
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/img/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preload" href="/assets/fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="/assets/fonts/newsreader-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Levarum">
 <meta property="og:title" content="Levarum pricing: AI visibility reports from $79 a month">
@@ -21,139 +21,116 @@
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Levarum. Know how far you’re heard in AI answers. Raise it.">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="stylesheet" href="/assets/levarum.css?v=5f46f2f6">
+<link rel="stylesheet" href="/assets/levarum-ds.css?v=2e9403ca">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Product", "name": "Levarum AI visibility tracking", "brand": {"@type": "Brand", "name": "Levarum"}, "description": "On-demand AI visibility reports for agencies: each client brand against its local rivals, with the margin of error shown.", "offers": [{"@type": "Offer", "name": "Solo", "price": "79", "priceCurrency": "USD", "url": "https://levarum-website.vercel.app/pricing", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "79", "priceCurrency": "USD", "unitText": "MONTH"}}, {"@type": "Offer", "name": "Agency 5", "price": "249", "priceCurrency": "USD", "url": "https://levarum-website.vercel.app/pricing", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "249", "priceCurrency": "USD", "unitText": "MONTH"}}, {"@type": "Offer", "name": "Agency 15", "price": "599", "priceCurrency": "USD", "url": "https://levarum-website.vercel.app/pricing", "priceSpecification": {"@type": "UnitPriceSpecification", "price": "599", "priceCurrency": "USD", "unitText": "MONTH"}}]}</script>
 </head>
 <body>
-<a class="lv-skip" href="#main">Skip to content</a>
-<div class="lv-root">
-<header style="background: var(--lv-page); border-bottom: 1px solid var(--lv-hairline); position: relative;">
-<div class="lv-wrap" style="padding-top: 10px; padding-bottom: 10px; display: flex; flex-wrap: nowrap; align-items: center; justify-content: space-between; gap: 8px 24px;">
-<a href="/" aria-label="Levarum home. Relevant, by design." class="lv-brand"><img width="572" height="124" src="/img/logo-header.svg" alt="" style="height: 28px; width: auto; display: block;"><span class="lv-brand__tag" aria-hidden="true">Relevant, by design.</span></a>
-<nav aria-label="Main" class="lv-nav-desk">
-<a class="lv-nav-link" href="/#how">How it works</a>
-<a class="lv-nav-link" href="/about">About</a>
-<a class="lv-nav-link" href="/pricing" aria-current="page" style="text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 6px;">Pricing</a>
-<a class="lv-nav-link" href="/methodology">Methodology</a>
-<a class="lv-nav-link" href="/signin">Sign in</a>
+<div style="width:100%;min-height:100%;background:#ffffff;color:#040404;font-family:'Figtree','Helvetica Neue',Arial,sans-serif">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="container">
+<nav class="lv-nav site-nav" aria-label="Main" style="padding:0">
+<a class="brand" href="/" aria-label="Levarum home. Relevant, by design."><img src="/img/ds/lockup-small.svg" alt="Levarum"><small aria-hidden="true">Relevant, by design.</small></a>
+<div class="lv-nav__links"><a href="/#how">How it works</a><a href="/pricing" aria-current="page">Pricing</a><a href="/methodology">Methodology</a><a href="/about">About</a></div>
+<div class="lv-nav__actions"><a class="lv-btn lv-btn--outline" href="/signin">Sign in</a><a class="lv-btn lv-btn--primary" href="#plans">Choose a plan</a><a class="lv-btn lv-btn--outline menu-btn" href="#site-links">Menu</a></div>
 </nav>
-<div class="lv-nav-mob">
-<details class="lv-menu-m">
-<summary>Menu</summary>
-<nav aria-label="Main, mobile" class="lv-menu-m__panel">
-<a class="lv-nav-link" href="/#how">How it works</a>
-<a class="lv-nav-link" href="/about">About</a>
-<a class="lv-nav-link" href="/pricing" aria-current="page">Pricing</a>
-<a class="lv-nav-link" href="/methodology">Methodology</a>
-<a class="lv-nav-link" href="/signin">Sign in</a>
-</nav>
-</details>
-</div>
-</div>
 </header>
+
 <main id="main">
-<section class="lv-sec lv-sec--tight" aria-labelledby="price-h">
-<div class="lv-wrap lv-split lv-split--even">
-<div class="lv-stack">
-<h1 id="price-h" class="lv-display">One finished report per brand. <span class="lv-closer">Choose how many.</span></h1>
-<p class="lv-lead" style="color: var(--lv-ink-body);">Every plan includes the same report, 4 times per brand a month, whenever you want it or on your own schedule.</p>
-<p class="lv-pill">Plans open Friday, November 13, 2026</p>
+
+<section class="section" aria-labelledby="pr-h">
+<div class="container two-col">
+<div class="lv-two">
+<p class="lv-eyebrow">Pricing</p>
+<h1 id="pr-h" class="display">One finished report per brand. <span class="closer">Choose how many.</span></h1>
+<p class="lead" style="margin-top:var(--space-5);color:var(--ink-muted)">Every plan includes the same report, four times per brand each month, run on demand or on a schedule you set. Plans open Friday, 13 November 2026. All prices are provisional until then.</p>
 </div>
-<img class="lv-illo" width="640" height="440" src="/img/illustration-48159eb1.svg" alt="">
+<img src="/img/ds/staircase.svg" alt="" style="width:100%;max-width:520px;justify-self:end">
 </div>
 </section>
 
-<section class="lv-sec" aria-label="Plans" style="padding-top: 0;">
-<div class="lv-wrap lv-stack lv-stack--lg">
-<ul class="lv-plans" role="list">
-<li id="solo" class="lv-plan">
-<div class="lv-plan__head"><h2>Solo</h2><span class="lv-plan__amount">$79</span><p class="lv-plan__per"><span>1 brand</span><span>a month</span></p></div>
-<p class="lv-plan__for">For a business without an agency, watching its own brand.</p>
-<details><summary>What’s included</summary><ul role="list"><li>1 brand workspace</li><li>4 reports a month</li><li>Report carries the Levarum name</li></ul></details>
-</li>
-<li id="agency-5" class="lv-plan is-featured">
-<div class="lv-plan__head"><h2>Agency 5</h2><span class="lv-plan__amount">$249</span><p class="lv-plan__per"><span>5 brands</span><span>about $50 a brand</span></p></div>
-<p class="lv-plan__for">For an agency with a few clients, or a business with several brands or locations.</p>
-<p class="lv-plan__flag">Opens once our account-isolation check passes</p>
-<details><summary>What’s included</summary><ul role="list"><li>5 brand workspaces</li><li>20 reports a month, pooled across your brands</li><li>Reports carry your name, not ours</li><li>Switch between brands with one login</li></ul></details>
-</li>
-<li id="agency-15" class="lv-plan">
-<div class="lv-plan__head"><h2>Agency 15</h2><span class="lv-plan__amount">$599</span><p class="lv-plan__per"><span>15 brands</span><span>about $40 a brand</span></p></div>
-<p class="lv-plan__for">For an agency with a larger client list, or a group with many locations.</p>
-<p class="lv-plan__flag">Opens once our account-isolation check passes</p>
-<details><summary>What’s included</summary><ul role="list"><li>15 brand workspaces</li><li>60 reports a month, pooled across your brands</li><li>Reports carry your name, not ours</li><li>Switch between brands with one login</li></ul></details>
-</li>
-</ul>
-<p class="lv-note" style="max-width: 60em;">Prices in US dollars, billed monthly by card through Stripe, renewing each month until you cancel. Extra reports beyond your plan are $9 each, sold 10 for $90, and don’t expire while you subscribe. All prices are provisional until plans open. US sales tax is added at checkout where it applies. When plans open, starting one means agreeing to the <a class="lv-link" href="/terms">Terms</a>, <a class="lv-link" href="/privacy">Privacy policy</a> and <a class="lv-link" href="/dpa">Data Processing Agreement</a>, which are drafts under legal review until then.</p>
+<section class="section section--mist" id="plans" aria-labelledby="plans-h">
+<div class="container">
+<h2 id="plans-h" class="headline" style="margin-bottom:var(--space-7)">Three plans. One method.</h2>
+<div class="plans">
+<div class="lv-price" style="background:var(--page)"><h3>Solo</h3><p class="lv-price__desc">For a business without an agency, tracking its own brand.</p><div class="lv-price__amount">$79 <small>per month</small></div><a class="lv-btn lv-btn--outline lv-btn--block" href="/signin?plan=solo">Start with Solo</a><hr><strong class="body-sm">Key features</strong><ul><li>1 brand workspace</li><li>4 reports a month</li><li>Reports carry the Levarum name</li><li>Run now, or on your schedule</li></ul><p class="note">Includes everything listed below.</p></div>
+<div class="lv-price lv-price--featured" style="background:var(--page)"><span class="lv-price__ribbon">About $50 per brand</span><h3>Agency 5</h3><p class="lv-price__desc">For agencies with a few clients, or a business with several brands or locations.</p><div class="lv-price__amount">$249 <small>per month</small></div><a class="lv-btn lv-btn--primary lv-btn--block" href="/signin?plan=agency5">Start with Agency 5</a><hr><strong class="body-sm">Everything in Solo, plus</strong><ul><li>5 brand workspaces</li><li>20 reports a month, pooled across brands</li><li>Reports under your agency's name</li><li>One login to switch between brands</li></ul><p class="note">Opens once the account-isolation check passes.</p></div>
+<div class="lv-price" style="background:var(--page)"><h3>Agency 15</h3><p class="lv-price__desc">For agencies with larger client lists, or groups with many locations.</p><div class="lv-price__amount">$599 <small>per month</small></div><a class="lv-btn lv-btn--outline lv-btn--block" href="/signin?plan=agency15">Start with Agency 15</a><hr><strong class="body-sm">Everything in Agency 5, plus</strong><ul><li>15 brand workspaces</li><li>60 reports a month, pooled across brands</li><li>About $40 per brand</li></ul><p class="note">Opens once the account-isolation check passes.</p></div>
+</div>
+<div class="price-notes">
+<div class="card"><h3 class="subtitle">Extra reports</h3><p style="margin-top:var(--space-3)">$9 each, sold 10 for $90. They never expire while you subscribe. Included reports reset on your billing date and do not roll over.</p></div>
+<div class="card"><h3 class="subtitle">Billing</h3><p style="margin-top:var(--space-3)">Prices in US dollars, billed monthly by card through Stripe, renewing until you cancel. US sales tax is added at checkout where it applies. Starting a plan means agreeing to the Terms, Privacy policy and Data Processing Agreement.</p></div>
+</div>
 </div>
 </section>
 
-<section class="lv-sec lv-sec--mist" aria-labelledby="incl-h">
-<div class="lv-wrap lv-split">
-<div class="lv-stack">
-<h2 id="incl-h" class="lv-headline">Included in every plan.</h2>
-<p class="lv-muted" style="margin: 0;">The report is the same on every plan. Only the number of brands and the name on the report change.</p>
-</div>
-<ul class="lv-ticks" role="list">
-<li>25 buyer questions you confirm, each asked 3 times: 75 answers per report</li>
-<li>OpenAI’s model with web search, through the API</li>
-<li>4 reports per brand a month, pooled across your account, now or on a schedule</li>
-<li>Summary and three to six next actions</li>
-<li>Mention rate, cited rate and share of voice against 3 to 10 local rivals</li>
-<li>Margin of error on every score, and scores by topic</li>
-<li>Every answer and source, searchable</li>
-<li>Web report, print layout, CSV export and an email when it’s ready</li>
-<li>Alerts when a brand or rival moves 15 points or more</li>
-<li>Sign in with an emailed code, no password</li>
+<section class="section" aria-labelledby="inc-h">
+<div class="container">
+<div class="section-head lv-two"><h2 id="inc-h" class="headline">Included in every plan. <span class="closer">No tiers of truth.</span></h2></div>
+<ul class="included">
+<li><span class="lv-check" role="img" aria-label="Included"></span><span>25 buyer questions you confirm, each asked three times: 75 answers per report</span></li>
+<li><span class="lv-check" role="img" aria-label="Included"></span><span>ChatGPT with live web search, through the OpenAI API, from the brand's location</span></li>
+<li><span class="lv-check" role="img" aria-label="Included"></span><span>Four reports per brand a month, pooled across your account</span></li>
+<li><span class="lv-check" role="img" aria-label="Included"></span><span>A summary and three to six next actions, numbers checked against the scores</span></li>
+<li><span class="lv-check" role="img" aria-label="Included"></span><span>Mention rate, cited rate and share of voice against 3 to 10 local rivals</span></li>
+<li><span class="lv-check" role="img" aria-label="Included"></span><span>A 95% margin of error on every score, plus scores by topic</span></li>
+<li><span class="lv-check" role="img" aria-label="Included"></span><span>Every answer and every cited source, searchable</span></li>
+<li><span class="lv-check" role="img" aria-label="Included"></span><span>Web report, print layout, CSV export and an email when a report is ready</span></li>
+<li><span class="lv-check" role="img" aria-label="Included"></span><span>Works on a phone</span></li>
+<li><span class="lv-check" role="img" aria-label="Included"></span><span>Sign in with an emailed code. No password to keep.</span></li>
 </ul>
 </div>
 </section>
 
-<section class="lv-sec" aria-labelledby="addons-h">
-<div class="lv-wrap lv-split">
-<div class="lv-stack">
-<h2 id="addons-h" class="lv-headline">Go deeper on any brand.</h2>
-<p class="lv-muted" style="margin: 0;">Add-ons are per brand, billed monthly with your plan. Add or remove them from your billing page.</p>
+<section class="band" aria-labelledby="eng-h">
+<div class="container two-col">
+<div class="lv-two">
+<h2 id="eng-h" class="headline">Measured on ChatGPT today. <span class="closer">More engines next.</span></h2>
+<p class="lead" style="margin-top:var(--space-5);color:var(--on-inverse-muted)">Every report names the engine, model, location and date it ran on. Google Gemini, Perplexity and Claude are rolling out next on the same method. We do not price an engine until it ships.</p>
+<a class="lv-btn lv-btn--primary" href="/methodology" style="margin-top:var(--space-6)">How we measure</a>
 </div>
-<ul class="lv-planrows" role="list">
-<li><div style="display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 14px; padding: 14px 0;"><span><span class="lv-plan__name">Insights</span><span class="lv-plan__for">Why each score moved, the sources gained or lost, and sites that cite your rivals but not you. Billed from the brand’s second report.</span></span><span class="lv-plan__price">$29<small>a month</small></span></div></li>
-<li><div style="display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 14px; padding: 14px 0;"><span><span class="lv-plan__name">Action drafts</span><span class="lv-plan__for">Up to 4 drafts a month for the weakest topic, such as five FAQ answers, built only from the brand’s own facts, for you to review.</span></span><span class="lv-plan__price">$49<small>a month</small></span></div></li>
-<li><div style="display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 14px; padding: 14px 0;"><span><span class="lv-plan__name">Question packs</span><span class="lv-plan__for">10 more buyer questions, asked in every report with the rest.</span></span><span class="lv-plan__price">$19<small>a month</small></span></div></li>
-</ul>
+<div class="lv-stats" style="margin:0">
+<div class="lv-stat"><b>$9</b><span>per extra report, in packs of 10</span></div>
+<div class="lv-stat"><b>0</b><span>contracts. Monthly, cancel any time</span></div>
+<div class="lv-stat"><b>1</b><span>method on every plan</span></div>
+</div>
 </div>
 </section>
 
-<section class="lv-sec lv-sec--mist" aria-labelledby="faq-h">
-<div class="lv-wrap lv-split">
-<h2 id="faq-h" class="lv-headline">Questions before you start.</h2>
-<div class="lv-acc">
-<details><summary>What is a brand workspace?</summary><p>One brand or location you track, with its own questions, rivals and report. Agency plans hold several, and you switch between them with one login.</p></details>
-<details><summary>Can I change plans later?</summary><p>Yes. Move between Solo, Agency 5 and Agency 15 from your billing page. If you add a brand beyond your plan’s limit, we offer the next plan up. When you move to a smaller plan, you choose which brands stay active; the rest pause at the end of your billing period, and their past reports stay readable.</p></details>
-<details><summary>What if I cancel or a payment fails?</summary><p>Cancelling stops renewal at the end of the month you have paid for, and there are no refunds for part months. If a payment fails, Stripe retries the card for 7 days; if it still fails, new reports stop until you update your card from the billing page. Your past reports stay readable.</p></details>
-<details><summary>Which AI engines do you measure?</summary><p>Today, OpenAI’s model with web search, through the API. Results may differ from what an individual ChatGPT user sees. Every report names the engine, model, location and date. Other engines come later as add-ons, where their terms allow, and will be reported separately. <a class="lv-link" href="/methodology">How we measure</a></p></details>
-<details><summary>Who can see our data?</summary><p>Only people signed in to your account can see your reports. We don’t sell or rent your data or your clients’ data. Stripe handles payment, OpenAI answers the questions and drafts each report’s summary and next actions, and Amazon Web Services hosts the service. The <a class="lv-link" href="/privacy">Privacy policy</a> lists each one.</p></details>
+<section class="section" aria-labelledby="pfaq-h">
+<div class="container">
+<div class="section-head lv-two"><h2 id="pfaq-h" class="headline">Plan questions. <span class="closer">Answered.</span></h2></div>
+<div class="lv-acc faq">
+<details open><summary>What is a brand workspace?</summary><p>One brand or location you track, with its own questions, rivals and reports. Agency plans hold several, and you switch between them with one login.</p></details>
+<details><summary>Can I change plans later?</summary><p>Yes, from your billing page. If you add a brand beyond your limit, you are offered the next plan up. When you move to a smaller plan you choose which brands stay active; the rest pause at the end of the billing period and their past reports stay readable.</p></details>
+<details><summary>What happens if I cancel, or a payment fails?</summary><p>Cancelling stops renewal at the end of the paid month; there are no refunds for partial months. All your past reports stay readable and exportable. If a payment fails, Stripe retries the card for 7 days; if it still fails, new reports pause until you update your card.</p></details>
+<details><summary>Do unused reports carry over?</summary><p>No. Included reports reset on your Stripe billing date. Extra reports you buy never expire while you subscribe.</p></details>
+<details><summary>Who can see our data?</summary><p>Only people signed in to your account. Levarum does not sell or rent your data or your clients' data. Stripe handles payments, OpenAI answers the questions and drafts the summary and actions, and Amazon Web Services hosts the service.</p></details>
 </div>
 </div>
 </section>
+
+<section class="cta-wrap">
+<div class="container">
+<div class="lv-cta" style="background:var(--mist)">
+<div><h2>Pick a plan. Confirm your questions. Click Run now.</h2><p>Your first report is ready within the hour of your first run.</p><a class="lv-btn lv-btn--primary" href="#plans">Choose a plan</a></div>
+<img src="/img/ds/dial.svg" alt="" style="width:320px">
+</div>
+</div>
+</section>
+
 </main>
-<footer class="lv-foot">
-<div class="lv-wrap lv-foot__inner">
-<div class="lv-stack" style="gap: 10px;">
-<a href="/" aria-label="Levarum home" style="display: inline-flex; align-self: flex-start;"><img width="572" height="186" loading="lazy" decoding="async" src="/img/logo-footer.svg" alt="Levarum. Relevant, by design." style="height: 52px; width: auto; display: block;"></a>
-<p class="lv-note" style="max-width: 36em;">Levarum is coined from the Latin <em lang="la">levāre</em>: to raise. It’s the root behind relevant and elevate. When someone asks an AI a question, we show you which brands the answer raises, and whether yours is one of them.</p>
+
+<footer class="site-footer">
+<div class="container">
+<div class="lv-footer">
+<div><img src="/img/ds/lockup-tagline.svg" alt="Levarum. Relevant, by design." style="height:64px"><p class="muted body-sm" style="margin-top:var(--space-4);max-width:36ch">Levarum, from the Latin <em>levāre</em>, to raise. The same root gives us lever, elevate and relevant.</p><small>© 2026 IT Associates, LLC. Payments by Stripe.</small></div>
+<div id="site-links"><h5>Product</h5><a href="/#how">How it works</a><a href="/pricing">Pricing</a><a href="/methodology">Methodology</a><a href="/signin">Sign in</a></div>
+<div><h5>Company</h5><a href="/about">About</a><a href="mailto:support@levarum.com">support@levarum.com</a></div>
+<div><h5>Legal</h5><a href="/terms">Terms of service</a><a href="/privacy">Privacy policy</a><a href="/dpa">Data Processing Agreement</a></div>
+<div><h5>Sub-processors</h5><span class="body-sm muted">Stripe (payments)<br>OpenAI (answers, summaries)<br>Amazon Web Services (hosting)</span></div>
 </div>
-<nav aria-label="Footer">
-<a href="/#how">How it works</a>
-<a href="/pricing">Pricing</a>
-<a href="/about">About</a>
-<a href="/methodology">Methodology</a>
-<a href="/terms">Terms</a>
-<a href="/privacy">Privacy policy</a>
-<a href="/dpa">Data Processing Agreement</a>
-<a href="/signin">Sign in</a>
-<a class="lv-foot__wide" href="mailto:support@levarum.com">support@levarum.com</a>
-</nav>
-<p class="lv-foot__legal">© 2026 IT Associates, LLC. Levarum is a trade name of IT Associates, LLC. Payments by Stripe. ChatGPT is a trademark of OpenAI; Levarum is not affiliated with OpenAI.</p>
+<p class="legal">ChatGPT is a trademark of OpenAI. Levarum is not affiliated with OpenAI. Questions: <a href="mailto:support@levarum.com">support@levarum.com</a></p>
 </div>
 </footer>
 </div>
